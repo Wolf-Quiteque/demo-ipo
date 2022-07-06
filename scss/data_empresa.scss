@@ -1,0 +1,178 @@
+section.dadoEmpresa {
+  // height: 100vh;
+  
+  .container {
+    // margin: 0 auto;
+    overflow: visible;
+    // width: 1040px;
+    inset: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    // width: 100%;
+    padding: 0 2%;
+    .box-info{
+      margin-bottom: 30px;
+    }
+    .card-Box{
+      padding:0px 0;
+      border-radius: 8px 0;
+      text-align: center;
+      color: $corWhite;
+      width: 200px;
+      
+     span,h3{
+        padding: 15px 15px 15px 15px ;
+        color: $corWhite;
+      }
+      span{
+        padding: 15px 0px 0px 0 ;
+        display: block;
+        
+      }
+     h2{
+        padding: 0;
+        color: $corWhite;
+      }
+    }
+    .investido{
+      
+      background-color: $corWarning;
+      h3{
+        background-color: $corPrimaria;
+        // width: 100%;
+      }
+    }
+    .ganhos{
+      background-color: $corGreen;
+      p,span,h3{
+      // padding: 15px 15px 15px 15px ;
+  
+      }
+      h3{
+        background-color: $corPrimaria;
+        color: $corWhite;
+        // width: 100%;
+      }
+    }
+
+    .box-info{
+      grid-column: 1/3;
+      align-self:center;
+      display: flex;
+      column-gap: 25px;
+      align-items: start;
+      justify-content: end;
+
+      .box_insade {
+        // display: flex;
+        // align-items: center;
+        // height: 100%;
+        // flex-direction: column;
+      }
+    }
+    .info-analytic {
+      // display: flex;
+      // flex-direction: column;
+      // align-items: end;
+      height: 100%;
+      grid-column: 1/3;
+
+      h2{
+        grid-column: 1/3;
+        border-top: 1px solid $corGray;
+      }
+      .empresas {
+        margin-top: 30px;
+        // height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .empresa {
+
+         display: flex;
+         flex-direction: column;
+          .content-image{
+            width: 400px;
+            height: 300px;
+            position: relative;
+
+
+          }
+          span{
+            color: $corPrimaria;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin:  30px 0;
+          }
+          p{
+            width: 500px;
+            margin:  10px auto;
+            text-align: justify;
+          }
+
+          button{
+            inset: 0;
+            margin: 5px auto;
+            // text-align: center;
+          }
+
+        }
+        .analytic{
+
+          align-self: flex-end;
+          .content-analytic{
+            background-color: rgb(97, 17, 77);
+            width: 500px;
+            height: 300px;
+          }
+          
+        }
+        
+      }
+      
+    }
+    
+    .dados_actualizado{
+      position: relative;
+      margin-top: 40px;
+     grid-column: 1/3;
+      // background-color: aquamarine;
+      position: relative;
+      // align-items: center;
+      display: flex;
+      justify-content: space-around;
+      .box__actaualizada{
+        width: 400px;
+        height: 200px;
+        .tabela{
+          overflow: auto;
+          height: 200px;
+        }
+        h2{
+          // position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        table{
+          width: 100%;
+          border-collapse: collapse;
+        }
+        table thead{
+          tr{
+            text-align: center;
+            background-color: $corPrimaria;
+          }
+        }
+        table tbody{
+          tr{
+            text-align: center;
+
+          }
+        }
+      }
+    } 
+  }
+}

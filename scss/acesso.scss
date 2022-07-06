@@ -1,0 +1,116 @@
+// background-color: #01038af0;
+// color: #047aed;
+// background-color: #01038af0;
+      // color: #01038A;
+
+
+section.login-acesso{
+        // background-color: #260404;
+  min-height: calc(100vh - 100px);
+  flex: 1 0 auto;
+  
+  .min-container{
+
+    h1{
+      text-align: center;
+    }
+
+    .login-area{
+      box-shadow: 0px 2px 10px rgba($color: #000000, $alpha: 0.5) ;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      .text-left{
+        background-color: #01038A;
+        width: 300px;
+        text-align: center;
+        padding: 20px 10px;
+        
+        h1,p{
+          color: #fff;
+
+        }
+        p{
+          color: #fff;
+          font-size: 1.3rem;
+
+        }
+      }
+      .login-acess{
+        width: 100%;
+        // background-color: antiquewhite;
+        max-width: 300px;
+        padding: 30px 15px;
+
+        .form{
+          .form-control{
+            margin: 30px 0;
+            input{
+              width: 100%;
+              height: 40px;
+              padding-left: 15px;
+
+              &:focus{
+                border-bottom: 2px solid #01038A;
+              }
+            }
+
+            &:nth-child(2){
+              margin-bottom: 10px;
+            }
+          }
+          .form-checkbox{
+            margin: 10px 0;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            label{
+              font-size: 1.3rem;
+              margin-right: 5px;
+              color: #047aed;
+            }
+            .label-register{
+              font-size: 1rem;
+              padding: 0 5px;
+            }
+          }
+          input[type="submit"]{
+            width: 100%;
+            height: 40px;
+            margin: 5px 0 12px 0;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: #047aed;
+            cursor: pointer;
+            
+            &:hover{
+              background-color: #01038A;
+              transform: scale(.9);
+            }
+          }
+
+          .account{
+            display: flex;
+            // justify-content: start;
+            align-items: start;
+            p{
+              font-size: 1.3rem;
+              margin: 0 10px 0 0;
+              color: #ce4f00;
+            }
+            a{
+              color: #047aed;
+              &:hover{
+                color: #01038A;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+     
+}
