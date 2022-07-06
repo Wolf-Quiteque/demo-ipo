@@ -24,13 +24,16 @@ export default function Home() {
           href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"
         />
       </Head>
+      <Script src="/scripts/sliders.js" strategy="lazyOnload"></Script>
 
       <section className="hero">
         <div className="container hero-flex">
           <h1>
             {" "}
             Uma maneira incrivel de ver seu negocio crescer é com a{" "}
-            <span>EMAINVEST</span>{" "}
+            <span>
+              EMAINVEST <span id="ga">Puala</span>
+            </span>{" "}
           </h1>
 
           <div className="button">
@@ -177,14 +180,16 @@ export default function Home() {
       <section className="investir padding">
         <div className="container">
           <h1 className="title">Voce pode obter um financiamento</h1>
-          <div className="button">
-            <button className="button btn-primary">Obter Fincanciamento</button>
-            <button className="button btn-secondary">Investir</button>
+          <div className="tab__button button">
+            <button className="">Obter Fincanciamento</button>
+            <button className="">Investir</button>
           </div>
           {/* financiamneto  */}
-          <div className="financiamento">
+          <div className="tab__content financiamento">
+            <div className="texto">
             <h1>Receba um financiamento</h1>
             <p>aqui voce encontra o jeito certo de dar vida ao seu negocio</p>
+            </div>
             <div className="financ-details">
               <div className="financ-box">
                 <Image
@@ -208,7 +213,7 @@ export default function Home() {
           </div>
 
           {/* Investimento */}
-          <div className="investir">
+          {/* <div className="investir">
             <h1>Comeca a investir</h1>
             <p>
               Trabalhando com o IPO voce tem chance de aumentar 3x o seu lucro
@@ -217,7 +222,7 @@ export default function Home() {
               <Image src="/image/aviso1.svg" width={300} height={170} alt="" />
               <h3>Pessoa Fisisca</h3>
             </div>
-          </div>
+          </div> */}
 
           {/* Area do button */}
           <button className="btn btn-primary">ler mais</button>

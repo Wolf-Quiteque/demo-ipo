@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2? family= Lato:wght@400;700;900 & family= Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300 & family= Roboto:wght@400;500;700;900 & display=swap");
 $corPrimaria: #01038a ;
 $corSecondary: #383bff;
 $corLink: #787878;
@@ -27,7 +28,6 @@ $corFundoLinear: linear-gradient(
   font-size: 62.5%;
 }
 
-@import url("https://fonts.googleapis.com/css2? family= Lato:wght@400;700;900 & family= Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300 & family= Roboto:wght@400;500;700;900 & display=swap");
 @import "./navbar.scss";
 @import "./buttons.scss";
 @import "./home.scss";
@@ -46,7 +46,7 @@ $corFundoLinear: linear-gradient(
   padding: 0;
   box-sizing: border-box;
   overflow: visible;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .hight {
   min-height: 70vh;
