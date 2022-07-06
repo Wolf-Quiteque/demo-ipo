@@ -183,31 +183,73 @@ section.aplicar {
 
 // Aqui vai os estilos da area investir
 section.investir {
-  background: $corGradient;
+  background: $corBackground-1;
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    .title{
+      text-transform: uppercase;
+      font-size: 4rem;
+      color: $corWhite;
+      padding: 2rem;
+      background-color: $corRgba;
+    }
+    .button{
+      button{
+        padding: 0.7rem  2rem;
+        margin-right: 1rem;
 
-    .financiamento {
-      margin: 4rem 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 100%;
-      h3,
-      p,
-      h1 {
-        margin-bottom: 3rem;
+        &:first-child{
+          background-color: $corPrimaria;
+          color: $corWhite;
+
+          &:hover{
+            background-color: $corSecondary;
+          }
+        }
+
+        &:last-child{
+          // 
+          &:hover{
+            background-color: $corSecondary;
+            color: $corWhite;
+          }
+        }
       }
 
-      .financ-details {
+    }
+
+
+    .tab__content{
+      max-width: 800px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .texto{
+        text-align: center;
+        margin-top: 2rem;
+        h1, p{
+          color: $corWhite;
+          font-family: "Lato", sans-serif;
+        }
+        h1{
+          font-size: 3rem;
+        }
+      }
+
+      .financ-details{
+        margin-top: 3rem;
         display: flex;
-        height: 100%;
-        .financ-box {
-          width: 350px;
-          height: 100%;
-          background-color: $corWhite;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+
+        img{
+          display: inline-block;
+          position: relative;
+          border-radius: 1rem;
+          border: 35px solid $corPrimaria
         }
       }
     }
