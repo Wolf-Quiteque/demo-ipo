@@ -181,11 +181,11 @@ export default function Home() {
         <div className="container">
           <h1 className="title">Voce pode obter um financiamento</h1>
           <div className="tab__button button">
-            <button className="">Obter Fincanciamento</button>
-            <button className="">Investir</button>
+            <button className="tab__button is__active">Obter Fincanciamento</button>
+            <button className="tab__button ">Investir</button>
           </div>
           {/* financiamneto  */}
-          <div className="tab__content financiamento">
+          <div className="tab__content financiamento is__active">
             <div className="texto">
             <h1>Receba um financiamento</h1>
             <p>aqui voce encontra o jeito certo de dar vida ao seu negocio</p>
@@ -213,20 +213,29 @@ export default function Home() {
           </div>
 
           {/* Investimento */}
-          {/* <div className="investir">
+
+          <div className="tab__content financiamento">
+            <div className="texto">
             <h1>Comeca a investir</h1>
-            <p>
-              Trabalhando com o IPO voce tem chance de aumentar 3x o seu lucro
-            </p>
-            <div className="financ-box">
-              <Image src="/image/aviso1.svg" width={300} height={170} alt="" />
-              <h3>Pessoa Fisisca</h3>
+            <p>Trabalhando com o IPO voce tem chance de aumentar 3x o seu lucro</p>
             </div>
-          </div> */}
+            <div className="financ-details">
+              <div className="financ-box">
+                <Image
+                  src="/image/aviso1.svg"
+                  width={300}
+                  height={170}
+                  alt=""
+                />
+                <h3>Pessoa Fisisca</h3>
+              </div>
+              </div>
+            </div>
+          </div>
 
           {/* Area do button */}
           <button className="btn btn-primary">ler mais</button>
-        </div>
+       
       </section>
 
       {/* Area relacionada com empresas */}
