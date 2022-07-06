@@ -1,6 +1,7 @@
 section.hero {
   // margin-top: 1.9rem;
   background: $corFundoLinear, url("../image/HERO.jpg");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -188,68 +189,67 @@ section.investir {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .title{
+    .title {
       text-transform: uppercase;
       font-size: 4rem;
       color: $corWhite;
       padding: 2rem;
       background-color: $corRgba;
     }
-    .button{
-      button{
-        padding: 0.7rem  2rem;
+    .button {
+      button {
+        padding: 0.7rem 2rem;
         margin-right: 1rem;
 
-        &:first-child{
+        &:first-child {
           background-color: $corPrimaria;
           color: $corWhite;
 
-          &:hover{
+          &:hover {
             background-color: $corSecondary;
           }
         }
 
-        &:last-child{
-          // 
-          &:hover{
+        &:last-child {
+          //
+          &:hover {
             background-color: $corSecondary;
             color: $corWhite;
           }
         }
       }
-
     }
 
-
-    .tab__content{
+    .tab__content {
       max-width: 800px;
       width: 100%;
       display: flex;
       flex-direction: column;
-      .texto{
+      .texto {
         text-align: center;
         margin-top: 2rem;
-        h1, p{
+        h1,
+        p {
           color: $corWhite;
           font-family: "Lato", sans-serif;
         }
-        h1{
+        h1 {
           font-size: 3rem;
         }
       }
 
-      .financ-details{
+      .financ-details {
         margin-top: 3rem;
         display: flex;
         justify-content: space-around;
         align-items: center;
         text-align: center;
 
-        img{
+        img {
           display: inline-block;
           position: relative;
           border-radius: 1rem;
-          border: 35px solid $corPrimaria
+          border: 35px solid $corPrimaria;
         }
       }
     }
