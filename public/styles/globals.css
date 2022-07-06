@@ -50,7 +50,7 @@ button.reset a {
 
 .btn-primary {
   color: #fff;
-  background-color: #383bff;
+  background-color: #01038a;
   cursor: pointer;
 }
 .btn-primary:hover {
@@ -93,22 +93,22 @@ button.reset a {
 }
 
 .btn-submit {
-  background-color: #383bff;
-  color: #fff;
+  background-color: #01038a;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   padding: 10px 20px;
-  border: 1px solid #383bff;
+  border: 1px solid #01038a;
   cursor: pointer;
 }
 .btn-submit:hover {
   background-color: #d6d6f4;
-  color: #01038a;
+  color: #383bff;
 }
 
 section.hero {
-  background: linear-gradient(94deg, rgba(0, 0, 0, 0.5) 0%, rgba(82, 85, 251, 0.2525385154) 100%), url("../public/image/HERO.jpg");
+  background: linear-gradient(94deg, rgba(0, 0, 0, 0.5) 0%, rgba(82, 85, 251, 0.2525385154) 100%), url("/image/HERO.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -127,17 +127,17 @@ section.hero h1 {
   top: -60px;
   max-width: 500px;
   font-size: 3.6rem;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 3rem;
   z-index: 100;
 }
 section.hero h1 span {
-  color: #383bff;
+  color: #01038a;
 }
 
 section.barra {
   height: 70px;
-  background-color: #01038a;
+  background-color: #383bff;
 }
 section.barra .barra-flex {
   display: flex;
@@ -146,7 +146,7 @@ section.barra .barra-flex {
 }
 section.barra .info-barra {
   margin-right: 50px;
-  color: #fff;
+  color: #ffffff;
 }
 
 section.dicas {
@@ -158,16 +158,16 @@ section.dicas h1.title-dicas {
   margin-left: 20rem;
   font-size: 3rem;
   font-weight: 300;
-  color: #fff;
+  color: #ffffff;
 }
 section.dicas h1.title-dicas span {
-  color: #383bff;
+  color: #01038a;
 }
 section.dicas .info-dicas h3.title3 {
-  color: #fff;
+  color: #ffffff;
 }
 section.dicas .info-dicas p {
-  color: #fff;
+  color: #ffffff;
 }
 section.dicas .imagens img {
   display: block;
@@ -210,7 +210,7 @@ section.ipo h2.title {
   text-align: center;
 }
 section.ipo h2.title span {
-  color: #383bff;
+  color: #01038a;
 }
 section.ipo h3 {
   margin: 1.9rem 0;
@@ -227,7 +227,7 @@ section.ipo .circ {
 }
 
 section.aplicar {
-  border-bottom: 1px solid #383bff;
+  border-bottom: 1px solid #01038a;
 }
 section.aplicar .flex-aplicar {
   display: flex;
@@ -246,7 +246,7 @@ section.aplicar .texto h2.h2 {
   text-align: center;
 }
 section.aplicar .texto h2.h2 span {
-  color: #383bff;
+  color: #01038a;
 }
 section.aplicar .texto p.description {
   width: 600px;
@@ -281,7 +281,9 @@ section.investir .container .financiamento {
   align-items: center;
   height: 100%;
 }
-section.investir .container .financiamento h3, section.investir .container .financiamento p, section.investir .container .financiamento h1 {
+section.investir .container .financiamento h3,
+section.investir .container .financiamento p,
+section.investir .container .financiamento h1 {
   margin-bottom: 3rem;
 }
 section.investir .container .financiamento .financ-details {
@@ -291,11 +293,11 @@ section.investir .container .financiamento .financ-details {
 section.investir .container .financiamento .financ-details .financ-box {
   width: 350px;
   height: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 section.empresas {
-  border-bottom: 1px solid #383bff;
+  border-bottom: 1px solid #01038a;
 }
 section.empresas .container {
   padding: 25px 0;
@@ -313,7 +315,7 @@ section.empresas .container .box-company {
 }
 
 section.processo {
-  border-bottom: 1px solid #383bff;
+  border-bottom: 1px solid #01038a;
 }
 section.processo .container {
   position: relative;
@@ -328,13 +330,13 @@ section.processo .container .text-left {
   max-width: 600px;
 }
 section.processo .container .proce-image {
-  border-bottom: 6px solid #383bff;
+  border-bottom: 6px solid #01038a;
   position: absolute;
   top: -86px;
   right: 99px;
 }
 section.parceiros {
-  background-color: #01038a;
+  background-color: #383bff;
 }
 section.parceiros h1.title {
   text-align: center;
@@ -361,7 +363,7 @@ section.testemunho {
 }
 section.testemunho .title {
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
 }
 section.testemunho .min-container {
@@ -374,7 +376,7 @@ section.testemunho .min-container {
 }
 section.testemunho .min-container .progress-bar {
   height: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   animation: barra 10s linear infinite;
   transform-origin: left;
@@ -386,7 +388,7 @@ section.testemunho .min-container .progress-bar {
 }
 section.testemunho .min-container .testimonial {
   line-height: 1.5;
-  color: #fff;
+  color: #ffffff;
   margin: 1rem 0;
   text-align: justify;
 }
@@ -403,19 +405,19 @@ section.testemunho .min-container .card .card-image {
 }
 section.testemunho .min-container .user-details {
   margin-left: 23px;
-  color: #fff;
+  color: #ffffff;
 }
 section.testemunho .min-container .user-details .username {
   margin: 2px 0;
-  color: #fff;
+  color: #ffffff;
 }
 section.testemunho .min-container .user-details .role {
-  color: #fff;
+  color: #ffffff;
   margin: 1px 0;
 }
 
 section.news-lether {
-  background-color: #383bff;
+  background-color: #01038a;
   text-align: center;
 }
 section.news-lether .min-container {
@@ -425,7 +427,7 @@ section.news-lether .min-container {
   height: 100%;
 }
 section.news-lether .min-container h1.title {
-  color: #fff;
+  color: #ffffff;
 }
 section.news-lether .min-container .form {
   width: 700px;
@@ -883,7 +885,7 @@ section.tirarFundo .container-800 .texto p {
   margin: 8px auto;
 }
 section.tirarFundo .container-800 .texto p span {
-  color: #383bff;
+  color: #01038a;
 }
 section.tirarFundo .container-800 .boxMoney {
   text-align: center;
@@ -892,10 +894,10 @@ section.tirarFundo .container-800 .boxMoney {
   align-items: center;
 }
 section.tirarFundo .container-800 .boxMoney h3 {
-  color: #fff;
+  color: #ffffff;
   padding: 16px;
   width: 100%;
-  background-color: #383bff;
+  background-color: #01038a;
   max-width: 700px;
 }
 section.tirarFundo .container-800 .boxMoney .form {
@@ -917,28 +919,28 @@ section.tirarFundo .container-800 .boxMoney .form .form-control [type=text] {
   padding: 1rem;
   background-color: transparent;
   font-size: 1.6rem;
-  background-color: #383bff;
+  background-color: #01038a;
   font-weight: 600;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 section.tirarFundo .container-800 .boxMoney .form .form-control [type=number] {
   padding: 1rem;
   width: 250px;
   height: 50px;
-  border: 1px solid #01038a;
+  border: 1px solid #383bff;
 }
 
 section.tabelaReferencia .container h2 {
   font-size: 3rem;
   font-weight: 300;
-  color: #383bff;
-  border-bottom: 2px solid #383bff;
+  color: #01038a;
+  border-bottom: 2px solid #01038a;
   margin-bottom: 25px;
 }
 section.tabelaReferencia .container .tabela__result {
   position: relative;
-  background: #fff;
+  background: #ffffff;
   height: 200px;
   overflow: auto;
 }
@@ -963,12 +965,12 @@ section.tabelaReferencia .container .tabela__result table {
   overflow: hidden;
 }
 section.tabelaReferencia .container .tabela__result table thead {
-  background-color: #383bff;
+  background-color: #01038a;
 }
 section.tabelaReferencia .container .tabela__result table thead tr th {
   height: 50px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 section.tabelaReferencia .container .tabela__result table tbody tr {
   background-color: #d6d6f4;
@@ -980,7 +982,7 @@ section.tabelaReferencia .container .tabela__result table tbody tr:nth-child(eve
   background-color: #f1f1f1;
 }
 section.tabelaReferencia .container .tabela__result table tbody tr:hover {
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
 }
@@ -991,7 +993,7 @@ section.paginacao .container {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  border-top: 2px solid #383bff;
+  border-top: 2px solid #01038a;
 }
 section.paginacao .container .paginas span {
   display: inline-block;
@@ -1005,8 +1007,8 @@ section.paginacao .container .paginas span {
   color: #444444;
 }
 section.paginacao .container .paginas .active {
-  background-color: #383bff;
-  color: #fff;
+  background-color: #01038a;
+  color: #ffffff;
 }
 section.paginacao .container .impressao form {
   display: flex;
@@ -1024,16 +1026,16 @@ section.paginacao .container .impressao form .form-control input {
   width: 100%;
   padding: 6px;
   font-size: 1.6rem;
-  border: 1px solid #383bff;
-  color: #383bff;
+  border: 1px solid #01038a;
+  color: #01038a;
 }
 section.paginacao .container .impressao form .form-control h4 {
   padding: 6px;
   width: 100%;
   height: 40px;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.6rem;
-  background-color: #383bff;
+  background-color: #01038a;
 }
 
 section.dadoEmpresa .container {
@@ -1051,12 +1053,12 @@ section.dadoEmpresa .container .card-Box {
   padding: 0px 0;
   border-radius: 8px 0;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   width: 200px;
 }
 section.dadoEmpresa .container .card-Box span, section.dadoEmpresa .container .card-Box h3 {
   padding: 15px 15px 15px 15px;
-  color: #fff;
+  color: #ffffff;
 }
 section.dadoEmpresa .container .card-Box span {
   padding: 15px 0px 0px 0;
@@ -1064,20 +1066,20 @@ section.dadoEmpresa .container .card-Box span {
 }
 section.dadoEmpresa .container .card-Box h2 {
   padding: 0;
-  color: #fff;
+  color: #ffffff;
 }
 section.dadoEmpresa .container .investido {
   background-color: #ff7a00;
 }
 section.dadoEmpresa .container .investido h3 {
-  background-color: #383bff;
+  background-color: #01038a;
 }
 section.dadoEmpresa .container .ganhos {
   background-color: #02de5a;
 }
 section.dadoEmpresa .container .ganhos h3 {
-  background-color: #383bff;
-  color: #fff;
+  background-color: #01038a;
+  color: #ffffff;
 }
 section.dadoEmpresa .container .box-info {
   grid-column: 1/3;
@@ -1112,7 +1114,7 @@ section.dadoEmpresa .container .info-analytic .empresas .empresa .content-image 
   position: relative;
 }
 section.dadoEmpresa .container .info-analytic .empresas .empresa span {
-  color: #383bff;
+  color: #01038a;
   text-transform: uppercase;
   font-weight: 600;
   margin: 30px 0;
@@ -1160,14 +1162,14 @@ section.dadoEmpresa .container .dados_actualizado .box__actaualizada table {
 }
 section.dadoEmpresa .container .dados_actualizado .box__actaualizada table thead tr {
   text-align: center;
-  background-color: #383bff;
+  background-color: #01038a;
 }
 section.dadoEmpresa .container .dados_actualizado .box__actaualizada table tbody tr {
   text-align: center;
 }
 
 .header-financiamento {
-  background-color: #383bff;
+  background-color: #01038a;
 }
 .header-financiamento .container {
   display: flex;
@@ -1178,7 +1180,7 @@ section.dadoEmpresa .container .dados_actualizado .box__actaualizada table tbody
   background-color: red;
 }
 .header-financiamento .container .companyAtive form label {
-  color: #fff;
+  color: #ffffff;
   margin-right: 5rem;
   display: flex;
   align-items: center;
@@ -1212,10 +1214,10 @@ section.financiamento .container .texto {
   width: 100%;
   max-width: 500px;
   margin: 36px 0;
-  color: #383bff;
+  color: #01038a;
 }
 section.financiamento .container .texto h1, section.financiamento .container .texto p {
-  color: #383bff;
+  color: #01038a;
 }
 section.financiamento .container .texto .title {
   font-size: 4rem;
@@ -1247,7 +1249,7 @@ section.financiamento .container .contactArea .form .form-control [type=text] {
   margin: 10px 0;
   padding: 10px;
   font-size: 1.6rem;
-  color: #383bff;
+  color: #01038a;
   font-family: "Roboto", sans-serif;
 }
 section.financiamento .container .contactArea .form .emailMobile {
@@ -1268,13 +1270,13 @@ section.financiamento .container .contactArea .form .form-textarea textarea {
   color: #444444;
 }
 section.financiamento .container .contactArea .form .form-textarea textarea:is(:focus, :focus-visible) {
-  border: 2px solid #01038a;
+  border: 2px solid #383bff;
 }
 section.financiamento .container .contactArea .form .form-textarea textarea::-webkit-scrollbar {
   width: 0px;
 }
 section.financiamento .container .contactArea .form .form-textarea .shortInfo {
-  background-color: #383bff;
+  background-color: #01038a;
   padding: 10px 2px 10px 30px;
   align-items: center;
   display: flex;
@@ -1284,18 +1286,18 @@ section.financiamento .container .contactArea .form .form-textarea .shortInfo {
 }
 section.financiamento .container .contactArea .form .form-textarea .shortInfo span {
   width: 50%;
-  color: #fff;
+  color: #ffffff;
 }
 section.financiamento .container .contactArea .form .form-textarea .shortInfo .mount {
   width: 50%;
-  color: #fff;
+  color: #ffffff;
 }
 section.financiamento .container .contactArea .form .form-textarea .shortInfo .mount span {
   padding: 0 6px;
 }
 section.financiamento .container .contactArea .form .form-textarea .shortInfo .mount [type=number] {
   font-size: 1.6rem;
-  color: #383bff;
+  color: #01038a;
   padding: 10px;
 }
 section.financiamento .container .contactArea .form .form-submit {
@@ -1307,153 +1309,6 @@ section.financiamento .container .contactArea .form .form-submit .send {
   background-color: #d6d6f4;
   padding: 10px 30px;
   font-size: 2rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 0.8fr 2fr 2fr 0.9fr;
-  grid-template-rows: 8rem auto auto auto;
-  grid-template-areas: "lefte navtop navtop rights" "lefte main main rights" "lefte main main rights" "lefte main main rights";
-}
-
-.menu-top {
-  padding: 0 3rem;
-  grid-area: navtop;
-  position: sticky;
-  top: 0;
-  background-color: white;
-  display: flex;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.menu-top .avatar {
-  display: flex;
-  align-items: center;
-}
-.menu-top .avatar .image {
-  background-color: pink;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  margin-right: 2rem;
-  border: 2px solid #383bff;
-}
-.menu-top .avatar .name-types {
-  display: flex;
-  column-gap: 25px;
-}
-.menu-top .avatar .name-types .name {
-  color: #ccc;
-}
-.menu-top .avatar .name-types .admin {
-  color: #383bff;
-}
-.menu-top .form {
-  width: 500px;
-}
-.menu-top .form form {
-  display: flex;
-  align-content: center;
-  position: relative;
-}
-.menu-top .form form input {
-  width: 100%;
-  height: 40px;
-  border: 1px solid #ccc;
-  border-radius: 1.6rem;
-  margin-right: 2rem;
-  padding: 0 3rem;
-  color: #787878;
-  font-size: 1.8rem;
-  letter-spacing: 0.2rem;
-  line-height: 125%;
-  font-family: "Lato", sans-serif;
-}
-.menu-top .form form button {
-  top: 10px;
-  right: 3rem;
-  position: absolute;
-  background-color: transparent;
-}
-.menu-top .form form button .bx {
-  color: #383bff;
-  font-size: 2rem;
-  color: #383bff;
-}
-
-#navBar {
-  background-color: #383bff;
-  border-right: 1px solid #ccc;
-  grid-area: lefte;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  padding-left: 2rem;
-}
-#navBar .emainvest-logo {
-  position: absolute;
-  height: 8rem;
-  width: 100%;
-}
-#navBar .brand {
-  margin-top: 10rem;
-  margin-bottom: 3rem;
-}
-#navBar .brand .avatar {
-  display: block;
-  position: relative;
-  object-fit: cover;
-  background-color: red;
-  height: 150px;
-  max-width: 150px;
-  margin: 0 auto;
-  border-radius: 50%;
-  margin-bottom: 3rem;
-}
-#navBar .brand .dash {
-  display: flex;
-  align-items: center;
-}
-#navBar nav span {
-  display: inline-block;
-  color: #d6d6f4;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-#navBar nav ul li {
-  border-bottom: 1px solid transparent;
-  margin-bottom: 0.5rem;
-  padding-left: 2rem;
-}
-#navBar nav ul li:hover {
-  border-bottom: 1px solid #383bff;
-  transform: translateX(-26px);
-  background-color: #fff;
-}
-#navBar nav ul li a {
-  padding: 12px 15px;
-  position: relative;
-}
-#navBar nav ul li:hover a {
-  color: #383bff;
-}
-#navBar nav ul li .icon {
-  margin-right: 2rem;
-  font-size: 2rem;
-}
-
-.aside-right {
-  background-color: white;
-  grid-area: rights;
-  position: sticky;
-  top: 0;
-  height: 100vh;
 }
 
 section.login-acesso {
@@ -1576,7 +1431,7 @@ body {
 }
 
 .active a {
-  color: #383bff;
+  color: #01038a;
 }
 
 .flex {

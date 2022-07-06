@@ -11,20 +11,19 @@ export default function Admin() {
           rel="stylesheet"
         ></link>
       </Head>
-      <Script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></Script>
+      {/* <Script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></Script> */}
       <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/dist/boxicons.js"
         integrity="sha512-KKEQFWV65YzA3d0Ih60GpEKEdT4ERdTgNyZO3aE0jDSEYpb2A16P+CwpPor5DhL3ZlIJtyczAcmjOfo3jQNyUQ=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
       ></Script>
-
+{/* 
       <div className="grid">
         <section id="navBar">
-          <div className="emainvest-logo">dddddd</div>
           <div className="brand">
             <div className="avatar">
-              <Image layout="fill" src="/image/man-profile.svg" alt=""  />
+              <img layout="fill" src="/image/man-profile.svg" alt="" />
             </div>
             <div className="dash">
               <i className="iconBoard bx bxs-dashboard"></i>
@@ -137,7 +136,9 @@ export default function Admin() {
 
         <section className="menu-top">
           <div className="avatar">
-            <div className="image"></div>
+            <div className="image">
+              <img layout="fill" src="/image/man-profile.svg" alt="" />
+            </div>
             <div className="name-types">
               <span className="name">Toma Sanimbo</span>
               <span className="admin">Admin</span>
@@ -159,12 +160,31 @@ export default function Admin() {
           </div>
         </section>
 
-        <div className="main-content"></div>
+        <div className="main-content">
+          <div className="primeiro-1">
+            <div className="left">sssss</div>
+            <div className="right">aaaaaa</div>
+          </div>
+        </div>
 
         <div className="aside-right padding">
           <div className="direito"></div>
         </div>
-      </div>
+      </div> */}
+
+
+
+
+
+      <nav>
+        <div className="profile">
+        <img src="/image/man-profile.svg" alt="" />
+          <div className="name-types">
+            <span className="name">tomaas sanimbo</span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
     </>
   );
 }
