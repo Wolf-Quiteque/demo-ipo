@@ -1,7 +1,6 @@
 section.hero {
   // margin-top: 1.9rem;
-  background: $corFundoLinear, url("../image/HERO.jpg");
-
+  background: $corFundoLinear, url("/image/HERO.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -196,7 +195,6 @@ section.investir {
     display: flex;
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
 
     .tab__content.is__active {
       display: block !important;
@@ -204,8 +202,6 @@ section.investir {
     .tab__content {
       display: none !important ;
     }
-=======
->>>>>>> 33799077070134a59844f9ee58dc554f49630bbf
     .title {
       text-transform: uppercase;
       font-size: 2.5rem;
@@ -253,17 +249,12 @@ section.investir {
           font-family: "Lato", sans-serif;
         }
         h1 {
+          transition: all 0.5s ease;
           font-size: 3rem;
         }
       }
-<<<<<<< HEAD
-      
-      .financ-details {
-        transition: all 0.5s ease;
-=======
 
       .financ-details {
->>>>>>> 33799077070134a59844f9ee58dc554f49630bbf
         margin-top: 3rem;
         display: flex;
         gap: 2rem;
