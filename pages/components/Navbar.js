@@ -44,7 +44,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="empresas">
+                <Link href="/empresas">
                   <a>Empresas</a>
                 </Link>
               </li>
@@ -62,7 +62,7 @@ export default function Navbar() {
           </nav>
           <div>
             <button className="btn btn-primary reset">
-              <Link href="acesso">
+              <Link href="/acesso">
                 <a>entrar</a>
               </Link>
             </button>
