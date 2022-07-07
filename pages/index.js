@@ -271,7 +271,7 @@ export default function Home() {
       {/* Processo da company de gerenciamento */}
 
       <section className="processo padding">
-        <div className="container proc-flex">
+        <div className="container ">
           <div className="text-left">
             <h1 className="title">
               Otimizamos a distribuição de varejo de Ofertas Públicas
