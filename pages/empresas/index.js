@@ -111,7 +111,7 @@ export default function Empresas() {
         <div className="container">
           {empresas
             ? empresas.map((e) => (
-                <div className="company">
+                <div key={e._id} className="company">
                   <Image
                     className="image-list"
                     src={e.imgurl}
