@@ -194,7 +194,7 @@ section.lista-empresa {
         // height: 100%;
         background-color: $color-primary;
         &:hover{
-          background-color: $secondagit;
+          background-color: $secondary;
         }
         color: $white;
         padding: 8px;
@@ -212,6 +212,8 @@ section.lista-empresa {
   }
 
   button.btn-center {
-    margin: 36px 0;
+    margin: 36px auto;
+    inset: 0;
+    display: flex;
   }
 }
