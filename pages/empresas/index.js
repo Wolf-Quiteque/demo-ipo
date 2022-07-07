@@ -107,25 +107,20 @@ export default function Empresas() {
           </div>
         </div>
       </section>
+
       <section className="lista-empresa padding">
         <div className="container">
           {empresas
             ? empresas.map((e) => (
                 <div key={e._id} className="company">
-                  <Image
-                    className="image-list"
-                    src={e.imgurl}
-                    width={350}
-                    height={250}
-                    alt=""
-                  />
+                  <img className="image-list" src={e.imgurl} alt="" />
                   <div className="favorite">
                     <i className="fa-regular fa-heart favorite-1"></i>
                   </div>
                   <Link href="empresas/details">
                     <div className="details-company">
                       <h2>{e.nome}</h2>
-                      <div className="stars">*****</div>
+                      {/* <div className="stars">*****</div> */}
                     </div>
                   </Link>
                 </div>
