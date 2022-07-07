@@ -140,42 +140,57 @@ section.ipo {
 section.aplicar {
   border-bottom: 1px solid $corPrimaria;
 
-  .flex-aplicar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-    
-  }
+  .container {
+    padding: 4rem 0;
+    border-top: 2px solid $corPrimaria;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-  .texto {
-    text-align: center;
-    h2.h2 {
-      margin: 3.6rem auto;
-      font-size: 3rem;
-      font-weight: 300;
+    .texto {
+      padding: 3rem;
+      transition: all 0.2s ease-in-out;
       text-align: center;
-      span {
-        color: $corPrimaria;
+      flex-basis: 1;
+      &:hover {
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+      }
+      h2.h2 {
+        margin: 3rem auto;
+        font-size: 3rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: "Lato", sans-serif;
+        span {
+          color: $corPrimaria;
+          font-weight: 700;
+        }
+      }
+
+      p.description {
+        width: 100%;
+        max-width: 500px;
+        text-align: justify;
       }
     }
+    .image-aplicar {
+      flex-basis: 1;
+      display: grid;
+      gap: 25px;
+      grid-template-columns: 250px 250px;
+      // padding: 10px;
+      // grid-template-columns: 1fr 1fr;
+      // justify-items: center;
+      // align-content: center;
+      .img-aplicar {
+        width: 100%;
+        max-width: 300px;
+        // margin: 0 3px;
+        // display: inline-block;
 
-    p.description {
-      width: 100%;
-      max-width: 600px;
-    }
-  }
-  .image-aplicar {
-    padding: 10px;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-content: center;
-    .img-aplicar {
-      width: 300px;
-      margin: 0 3px;
-      display: inline-block;
-
-      img {
-        border-radius: 1rem;
+        img {
+          // border-radius: 1rem;
+        }
       }
     }
   }
@@ -298,6 +313,7 @@ section.empresas {
 
 section.processo {
   border-bottom: 1px solid $corPrimaria;
+
   .container {
     position: relative;
     display: flex;
@@ -310,6 +326,14 @@ section.processo {
       text-align: center;
       width: 100%;
       max-width: 600px;
+      padding: 2rem ;
+      transition: all ease-in 0.2s;
+      &:hover {
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+      }
+      p{
+        text-align: justify;
+      }
     }
     .proce-image {
       border-bottom: 6px solid $corPrimaria;
@@ -323,10 +347,9 @@ section.processo {
         display: block;
         position: relative;
         width: 100%;
-        max-width: 500px;
-        height: 550px;
+        max-width: 400px;
+        height: 400px;
       }
-
     }
   }
 }

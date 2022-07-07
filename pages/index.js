@@ -9,6 +9,10 @@ export default function Home() {
       <Head>
         <link rel="shortcut icon" href="" />
         <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+        <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
           integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -142,10 +146,10 @@ export default function Home() {
         <button className="btn btn-primary top">Ler mais</button>
       </section>
 
-      <section className="aplicar padding">
-        <div className="container flex-aplicar">
+      <section className="aplicar ">
+        <div className="container">
           <div className="texto">
-            <h2 className="h2">Saiba como aplicar o seu dinheiro</h2>
+            <h2 className="h2">Saiba como aplicar o seu <span>dinheiro</span></h2>
             <p className="description">
               A EmainvestIPO trabalha diretamente com empresas emissoras que
               estão abrindo o capital, subscritores e corretoras online criando
