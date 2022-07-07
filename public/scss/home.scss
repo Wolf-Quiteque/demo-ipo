@@ -141,10 +141,10 @@ section.aplicar {
   border-bottom: 1px solid $corPrimaria;
 
   .flex-aplicar {
-    display: flex;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
+    
   }
 
   .texto {
@@ -152,7 +152,6 @@ section.aplicar {
     h2.h2 {
       margin: 3.6rem auto;
       font-size: 3rem;
-      max-width: 500px;
       font-weight: 300;
       text-align: center;
       span {
@@ -161,7 +160,8 @@ section.aplicar {
     }
 
     p.description {
-      width: 600px;
+      width: 100%;
+      max-width: 600px;
     }
   }
   .image-aplicar {
@@ -278,7 +278,7 @@ section.investir {
 section.empresas {
   border-bottom: 1px solid $corPrimaria;
   .container {
-    padding: 25px 0;
+    padding: 25px 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,17 +308,25 @@ section.processo {
 
     .text-left {
       text-align: center;
+      width: 100%;
       max-width: 600px;
     }
     .proce-image {
       border-bottom: 6px solid $corPrimaria;
-      position: absolute;
-      // position: relative;
-      top: -86px;
-      right: 99px;
+      // position: absolute;
+      // // position: relative;
+      // top: -86px;
+      // right: 99px;
 
       .image {
+        object-fit: cover;
+        display: block;
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        height: 550px;
       }
+
     }
   }
 }

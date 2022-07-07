@@ -1,0 +1,62 @@
+@media (max-width: 1380px) {
+  section.aplicar {
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+  }
+  section.aplicar .texto {
+    width: 100%;
+    max-width: 400px;
+  }
+  section.aplicar .image-aplicar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 25px;
+  }
+  section.aplicar .image-aplicar .img-aplicar {
+    width: 100%;
+    max-width: 200px;
+  }
+  section.empresas {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  section.empresas .box-company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  section.empresas .box-company .box-company {
+    width: 33.33%;
+  }
+  section.processo .text-left p {
+    width: 100%;
+  }
+  section.processo .proce-image .image {
+    position: relative;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 991px) {
+  .image-aplicar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 25px;
+  }
+  .image-aplicar .img-aplicar {
+    width: 100%;
+    max-width: 200px;
+  }
+  section.processo .container .text-left {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/*# sourceMappingURL=mediaquery.css.map */

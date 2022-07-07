@@ -162,16 +162,16 @@ export default function Home() {
 
           <div className="image-aplicar">
             <div className="img-aplicar">
-              <Image src="/image/aviso1.svg" width={300} height={170} alt="" />
+              <img src="/image/aviso1.svg" alt="" />
             </div>
             <div className="img-aplicar">
-              <Image src="/image/aviso1.svg" width={300} height={170} alt="" />
+              <img src="/image/aviso1.svg" alt="" />
             </div>
             <div className="img-aplicar">
-              <Image src="/image/aviso1.svg" width={300} height={170} alt="" />
+              <img src="/image/aviso1.svg" alt="" />
             </div>
             <div className="img-aplicar">
-              <Image src="/image/aviso1.svg" width={300} height={170} alt="" />
+              <img src="/image/aviso1.svg" alt="" />
             </div>
           </div>
         </div>
@@ -247,16 +247,16 @@ export default function Home() {
           <h1 className="title">Empresas</h1>
           <div className="box-company">
             <div className="box-company">
-              <Image src="/image/aviso1.svg" width={300} height={170} alt="" />
+              <img src="/image/aviso1.svg" alt="" />
             </div>
             <div className="box-company">
-              <Image src="/image/aviso1.svg" width={300} height={170} alt="" />
+              <img src="/image/aviso1.svg" alt="" />
             </div>
             <div className="box-company">
-              <Image src="/image/aviso1.svg" width={300} height={170} alt="" />
+              <img src="/image/aviso1.svg" alt="" />
             </div>
             <div className="box-company">
-              <Image src="/image/aviso1.svg" width={300} height={170} alt="" />
+              <img src="/image/aviso1.svg" alt="" />
             </div>
           </div>
 
@@ -292,13 +292,7 @@ export default function Home() {
           </div>
 
           <div className="proce-image">
-            <Image
-              className="image"
-              src="/image/HERO.jpg"
-              width={400}
-              height={500}
-              alt=""
-            />
+            <img className="image" src="/image/HERO.jpg" alt="" />
           </div>
         </div>
       </section>

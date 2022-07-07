@@ -230,7 +230,6 @@ section.aplicar {
   border-bottom: 1px solid #01038a;
 }
 section.aplicar .flex-aplicar {
-  display: flex;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100%;
@@ -241,7 +240,6 @@ section.aplicar .texto {
 section.aplicar .texto h2.h2 {
   margin: 3.6rem auto;
   font-size: 3rem;
-  max-width: 500px;
   font-weight: 300;
   text-align: center;
 }
@@ -249,7 +247,8 @@ section.aplicar .texto h2.h2 span {
   color: #01038a;
 }
 section.aplicar .texto p.description {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 section.aplicar .image-aplicar {
   padding: 10px;
@@ -348,7 +347,7 @@ section.empresas {
   border-bottom: 1px solid #01038a;
 }
 section.empresas .container {
-  padding: 25px 0;
+  padding: 25px 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -375,14 +374,21 @@ section.processo .container {
 }
 section.processo .container .text-left {
   text-align: center;
+  width: 100%;
   max-width: 600px;
 }
 section.processo .container .proce-image {
   border-bottom: 6px solid #01038a;
-  position: absolute;
-  top: -86px;
-  right: 99px;
 }
+section.processo .container .proce-image .image {
+  object-fit: cover;
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 550px;
+}
+
 section.parceiros {
   background-color: #383bff;
 }
@@ -1449,6 +1455,66 @@ section.login-acesso .min-container .login-area .login-acess .form .account a:ho
   color: #01038A;
 }
 
+@media (max-width: 1380px) {
+  section.aplicar {
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+  }
+  section.aplicar .texto {
+    width: 100%;
+    max-width: 400px;
+  }
+  section.aplicar .image-aplicar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 25px;
+  }
+  section.aplicar .image-aplicar .img-aplicar {
+    width: 100%;
+    max-width: 200px;
+  }
+  section.empresas {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  section.empresas .box-company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  section.empresas .box-company .box-company {
+    width: 33.33%;
+  }
+  section.processo .text-left p {
+    width: 100%;
+  }
+  section.processo .proce-image .image {
+    position: relative;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 991px) {
+  .image-aplicar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 25px;
+  }
+  .image-aplicar .img-aplicar {
+    width: 100%;
+    max-width: 200px;
+  }
+  section.processo .container .text-left {
+    width: 100%;
+    max-width: 400px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
