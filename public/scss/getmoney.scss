@@ -53,9 +53,15 @@ section.tirarFundo {
         align-items: center;
         margin-top: 10px;
 
+        // .red {
+        //   border-bottom: 2px solid red;
+        //   color: blue;
+        //   font-size: 4rem;
+        // }
         .form-control {
           margin: 10px 0;
           display: flex;
+
           [type="text"] {
             width: 60px;
             display: inline-block;
@@ -153,7 +159,6 @@ section.tabelaReferencia {
 // Estilos da paginacao
 
 section.paginacao {
-
   .container {
     padding-top: 20px;
     display: flex;
@@ -161,8 +166,8 @@ section.paginacao {
     justify-content: space-around;
     width: 100%;
     border-top: 2px solid $corPrimaria;
-    .paginas{
-      span{
+    .paginas {
+      span {
         display: inline-block;
         margin: 0 10px;
         width: 40px;
@@ -172,10 +177,9 @@ section.paginacao {
         border-radius: 50%;
         background-color: $corBackground-1;
         color: $corTexto;
-        
       }
 
-      .active{
+      .active {
         background-color: $corPrimaria;
         color: $corWhite;
       }
@@ -191,7 +195,7 @@ section.paginacao {
           justify-content: center;
           margin-right: 50px;
 
-          input{
+          input {
             height: 40px;
             width: 100%;
             padding: 6px;

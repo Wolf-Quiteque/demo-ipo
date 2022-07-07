@@ -1493,6 +1493,10 @@ section.login-acesso .min-container .login-area .login-acess .form .account a:ho
   color: #01038A;
 }
 
+.red {
+  border: 2px solid red !important;
+}
+
 @media (max-width: 1380px) {
   section.aplicar {
     grid-template-columns: 2fr 1fr;
