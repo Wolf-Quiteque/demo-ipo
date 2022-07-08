@@ -1,45 +1,42 @@
 .header-financiamento {
   background-color: $corPrimaria;
- .container{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-  .tipocompany {
-    background-color: red;
-    .empresa {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .tipocompany {
+      background-color: red;
+      .empresa {
+      }
     }
+    .companyAtive {
+      form {
+        label {
+          color: $corWhite;
+          margin-right: 5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-  }
-  .companyAtive{
-    form{
-
-      label{
-  
-        color: $corWhite;
-        margin-right: 5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        span{
-          margin-right: 2rem;
+          span {
+            margin-right: 2rem;
+          }
         }
       }
     }
   }
- }
 }
 
 section.financiamento {
   position: relative;
-  .overlay{
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     min-height: 50.5vh;
     z-index: 1;
-    background-color: $corBackground-1 ;
+    background-color: $corBackground-1;
   }
   .container {
     position: relative;
@@ -54,56 +51,58 @@ section.financiamento {
       margin: 36px 0;
       color: $corPrimaria;
 
-      h1,p{
-      color: $corPrimaria;
-
+      h1,
+      p {
+        color: $corPrimaria;
       }
-      .title{
+      .title {
         font-size: 4rem;
         font-weight: 700;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         margin: 0;
       }
-      .warning{
-        color:  $corWarning;
+      .warning {
+        color: $corTexto;
         font-weight: 600;
       }
     }
 
-    .contactArea{
+    .contactArea {
       max-width: 700px;
       width: 100%;
-      
-      
-      .form{
+
+      .form {
         display: flex;
         flex-direction: column;
+        text-transform: uppercase !important;
         align-items: center;
-        .form-control{
+        .form-control {
           display: flex;
           justify-content: space-between;
           column-gap: 20px;
-          [type="text"]{
+          [type="text"] {
             height: 40px;
+            line-height: 125%;
             width: 320px;
             margin: 10px 0;
             padding: 10px;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
+            font-family: "Lato", sans-serif;
             color: $corPrimaria;
-            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            font-weight: 400;
           }
-
         }
 
-        .emailMobile{
+        .emailMobile {
           flex-direction: column;
         }
 
-        .form-textarea{
+        .form-textarea {
           width: 100%;
           max-width: 700px;
           padding: 0 2%;
-          textarea{
+          textarea {
             width: 100%;
             height: 150px;
             padding: 10px;
@@ -112,14 +111,14 @@ section.financiamento {
             font-size: 1.6rem;
             color: $corTexto;
 
-            &:is(:focus, :focus-visible){
-              border:  2px solid $corSecondary;
+            &:is(:focus, :focus-visible) {
+              border: 2px solid $corSecondary;
             }
-            &::-webkit-scrollbar{
+            &::-webkit-scrollbar {
               width: 0px;
             }
           }
-          .shortInfo{
+          .shortInfo {
             background-color: $corPrimaria;
             padding: 10px 2px 10px 30px;
             align-items: center;
@@ -128,54 +127,51 @@ section.financiamento {
             width: 100%;
             justify-content: space-between;
 
-            span{
+            span {
               width: 50%;
               color: $corWhite;
             }
-            .mount{
+            .mount {
               width: 50%;
               color: $corWhite;
-              span{
+              span {
                 padding: 0 6px;
               }
 
-              [type=number]{
+              [type="number"] {
                 font-size: 1.6rem;
                 color: $corPrimaria;
                 padding: 10px;
-
               }
             }
-
           }
         }
 
-        .form-submit{
+        .form-submit {
           display: flex;
           justify-content: center;
           align-items: center;
-          .send{
+          .send {
             background-color: $corBackground-1;
-            padding:  10px 30px;
+            padding: 10px 30px;
             font-size: 2rem;
+          }
+          [type=submit]{
+            // height: 40px;
+            // width: 200px;
+            background-color: $corSecondary;
+            font-family: "Lato", sans-serif;
+            color: $corWhite;
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border: 1px solid $corPrimaria;
+          cursor: pointer;
 
           }
-          // [type=submit]{
-          //   // height: 40px;
-          //   // width: 200px;
-          //   background-color: $corBackground-1;
-          //   color: $corWhite;
-          //   font-size: 2rem;
-          //   font-weight: 700;
-          //   text-transform: uppercase;
-          //   padding: 10px 20px;
-          //   border: 1px solid $corPrimaria;
-          // cursor: pointer;
-
-          // }
         }
       }
-
     }
   }
 }

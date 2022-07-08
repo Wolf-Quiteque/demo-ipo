@@ -20,7 +20,7 @@ export default function Financiamento() {
           <div className="companyAtive">
             <form action="">
               <label htmlFor="">
-                  <span>conta ativa</span>
+                <span>conta ativa</span>
                 <input type="checkbox" name="" id="" />
               </label>
             </form>

@@ -49,7 +49,6 @@ $corFundoLinear: linear-gradient(
   padding: 0;
   box-sizing: border-box;
   overflow: visible;
-  font-family: "Lato", sans-serif;
 }
 .hight {
   min-height: 70vh;
@@ -57,6 +56,7 @@ $corFundoLinear: linear-gradient(
 
 html,
 body {
+  font-family: "Poppins", sans-serif !important;
   height: 100%;
   min-height: 100vh;
   display: flex;
@@ -65,9 +65,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 125%;
   background-color: #f1f1f1;
 }
 .active a {
@@ -91,6 +90,13 @@ body {
   margin: 0 auto;
   padding: 0 2%;
   max-width: 1440px;
+}
+
+.container-2 {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px 2rem 15px;
 }
 .min-container {
   margin: 0 auto;
