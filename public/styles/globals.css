@@ -53,7 +53,7 @@ button.reset a {
   cursor: pointer;
 }
 .btn-primary:hover {
-  background-color: #01038a;
+  background-color: #383bff;
   transform: translateY(-2px);
 }
 
@@ -63,6 +63,16 @@ button.reset a {
 .secondary:hover {
   color: #fff;
   border: 1px solid #fff;
+}
+
+.btn-danger {
+  color: #383bff;
+  background-color: #f1f1f1;
+}
+.btn-danger:hover {
+  color: #ffffff;
+  background-color: #01038a;
+  transform: translateY(-2px);
 }
 
 .btn-2 {
@@ -1209,7 +1219,6 @@ section.paginacao .container .impressao form .form-control h4 {
 }
 .s-analytic .empresas .empresa button {
   margin: 2rem 0;
-  background-color: red;
 }
 .s-analytic .empresas .empresa button:nth-child(2) {
   background-color: blue;

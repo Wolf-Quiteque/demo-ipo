@@ -60,7 +60,7 @@ export default function DataEmpresa() {
                 Veritatis molestiae qui rem nemo incidunt totam, laborum,
                 temporibus minima culpa officiis quasi, dicta accusantium.
               </p>
-              <button className="btn btn-primary">cancelar</button>
+              <button className="btn btn-danger">cancelar</button>
             </div>
           </div>
         </div>

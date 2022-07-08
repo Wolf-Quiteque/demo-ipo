@@ -20,10 +20,10 @@ button.reset {
   cursor: pointer;
 
   &:hover {
-    background-color: #01038a;
+    background-color: $corSecondary;
     transform: translateY(-2px);
   }
-} 
+}
 
 .secondary {
   // margin: 2rem 0;
@@ -32,6 +32,16 @@ button.reset {
   &:hover {
     color: #fff;
     border: 1px solid #fff;
+  }
+}
+
+.btn-danger {
+  color: $corSecondary;
+  background-color: $corBackground;
+  &:hover {
+    color: $corWhite;
+    background-color: #01038a;
+    transform: translateY(-2px);
   }
 }
 
@@ -62,8 +72,7 @@ button.reset {
   }
 }
 
-
-.btn-submit{
+.btn-submit {
   background-color: $corPrimaria;
   color: $corWhite;
   font-size: 2rem;
@@ -71,8 +80,8 @@ button.reset {
   text-transform: uppercase;
   padding: 10px 20px;
   border: 1px solid $corPrimaria;
-cursor: pointer;
-  &:hover{
+  cursor: pointer;
+  &:hover {
     background-color: $corBackground-1;
     color: $corSecondary;
   }
