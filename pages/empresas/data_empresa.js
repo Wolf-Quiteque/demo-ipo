@@ -75,7 +75,7 @@ export default function DataEmpresa() {
                 <thead>
                   <tr>
                     <th>Nome</th>
-                    <table>Moeda</table>
+                    <th>Moeda</th>
                     <th>Price</th>
                     <th>Investimento</th>
                     <th>Raking</th>
@@ -84,84 +84,84 @@ export default function DataEmpresa() {
                 <tbody>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
@@ -171,14 +171,14 @@ export default function DataEmpresa() {
             </div>
           </div>
 
-          <div className="empresaemBaixa box__actaualizada">
+          <div className="empresaemAlta box__actaualizada">
             <h2>EMPRESA EM Alta</h2>
             <div className="tabela">
               <table>
                 <thead>
                   <tr>
                     <th>Nome</th>
-                    <table>Moeda</table>
+                    <th>Moeda</th>
                     <th>Price</th>
                     <th>Investimento</th>
                     <th>Raking</th>
@@ -187,84 +187,84 @@ export default function DataEmpresa() {
                 <tbody>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
@@ -274,14 +274,14 @@ export default function DataEmpresa() {
             </div>
           </div>
 
-          <div className="empresaemBaixa box__actaualizada">
-            <h2>EMPRESA EM Recente</h2>
+          <div className="empresaemRecent box__actaualizada">
+            <h2>EMPRESA Recente</h2>
             <div className="tabela">
               <table>
                 <thead>
                   <tr>
                     <th>Nome</th>
-                    <table>Moeda</table>
+                    <th>Moeda</th>
                     <th>Price</th>
                     <th>Investimento</th>
                     <th>Raking</th>
@@ -290,84 +290,84 @@ export default function DataEmpresa() {
                 <tbody>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td>Emainvest</td>
-                    <table>Ao</table>
+                    <td>Ao</td>
                     <td>400</td>
                     <td>25</td>
                     <td>1</td>
