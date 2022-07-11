@@ -15,3 +15,6 @@ tabButton.forEach((tab, index) => {
     tabButton[index].classList.add("is__active");
   });
 });
+
+
+

@@ -3,7 +3,8 @@ $corPrimaria: #3ab0ff;
 $corSecondary: #1363df;
 $corBackground-1: #9fb4ff;
 $corRoza: #eb4747;
-// $corBackground-1: #15133C;
+$corfile: #15133c;
+$corBackground-1: #15133c;
 
 // $corPrimaria: #01038a;
 // $corSecondary: #383bff;
@@ -74,6 +75,9 @@ body {
   line-height: 125%;
   background-color: #fff;
 }
+.bg-tab {
+  color: $corWhite;
+}
 .active a {
   color: $corPrimaria;
 }
@@ -116,7 +120,16 @@ body {
   max-width: 800px;
 }
 // Comeaca o nav
-
+.actived {
+  display: block !important;
+  &::after {
+    display: table;
+    content: "";
+    width: 200px;
+    height: 5px;
+    background-color: $corPrimaria;
+  }
+}
 a {
   text-decoration: none;
   color: #ccc;

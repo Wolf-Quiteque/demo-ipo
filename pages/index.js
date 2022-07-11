@@ -28,7 +28,7 @@ export default function Home() {
           href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"
         />
       </Head>
-      <Script src="/scripts/sliders.js" strategy="lazyOnload"></Script>
+      <Script src="/scripts/sliders.js"></Script>
 
       <section className="hero">
         <div className="container hero-flex">
@@ -149,7 +149,9 @@ export default function Home() {
       <section className="aplicar ">
         <div className="container">
           <div className="texto">
-            <h2 className="h2">Saiba como aplicar o seu <span>dinheiro</span></h2>
+            <h2 className="h2">
+              Saiba como aplicar o seu <span>dinheiro</span>
+            </h2>
             <p className="description">
               A EmainvestIPO trabalha diretamente com empresas emissoras que
               estão abrindo o capital, subscritores e corretoras online criando

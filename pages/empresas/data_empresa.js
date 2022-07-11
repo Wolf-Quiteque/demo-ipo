@@ -8,6 +8,8 @@ export default function DataEmpresa() {
     <>
       <Script src="https://www.gstatic.com/charts/loader.js"></Script>
       <Script src="/scripts/graphic.js"></Script>
+      <Script src="/scripts/company.js"></Script>
+
       <section className="s-dataEmpresa padding">
         <div className="container-2">
           <div className="investido">
@@ -68,9 +70,13 @@ export default function DataEmpresa() {
 
       <section className="s-information-market">
         <div className="container-2 dados_actualizado">
+          <div className="header-menu">
+            <h2 className="actived bg-tab">EMPRESA EM BAIXA</h2>
+            <h2>EMPRESA EM ALTA</h2>
+            <h2>EMPRESA EM RECENTE</h2>
+          </div>
           <div className="empresaemBaixa box__actaualizada">
-            <h2>EMPRESA EM BAIXA</h2>
-            <div className="tabela">
+            <div className=" header-tab tabela actived ">
               <table>
                 <thead>
                   <tr>
@@ -170,10 +176,8 @@ export default function DataEmpresa() {
               </table>
             </div>
           </div>
-
-          <div className="empresaemAlta box__actaualizada">
-            <h2>EMPRESA EM Alta</h2>
-            <div className="tabela">
+          <div className=" empresaemBaixa box__actaualizada">
+            <div className="header-tab tabela">
               <table>
                 <thead>
                   <tr>
@@ -273,10 +277,8 @@ export default function DataEmpresa() {
               </table>
             </div>
           </div>
-
-          <div className="empresaemRecent box__actaualizada">
-            <h2>EMPRESA Recente</h2>
-            <div className="tabela">
+          <div className=" empresaemBaixa box__actaualizada">
+            <div className="header-tab tabela">
               <table>
                 <thead>
                   <tr>
@@ -384,7 +386,7 @@ export default function DataEmpresa() {
           <div className="paginas">
             <span>Prev</span>
             <span>1</span>
-            <span className="active">2</span>
+            <span className="">2</span>
             <span>3</span>
             <span>Next</span>
           </div>

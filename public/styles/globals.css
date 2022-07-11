@@ -114,7 +114,7 @@ button.reset a {
   cursor: pointer;
 }
 .btn-submit:hover {
-  background-color: #9fb4ff;
+  background-color: #15133c;
   color: #1363df;
 }
 
@@ -162,7 +162,7 @@ section.barra .info-barra {
 
 section.dicas {
   padding: 70px 0;
-  background-color: #9fb4ff;
+  background-color: #15133c;
 }
 section.dicas h1.title-dicas {
   margin-bottom: 3.6rem;
@@ -283,7 +283,7 @@ section.aplicar .container .image-aplicar .img-aplicar {
   max-width: 300px;
 }
 section.investir {
-  background: #9fb4ff;
+  background: #15133c;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -958,7 +958,7 @@ section.detalhes-company .container .details-company .button-invest .posicao .av
 }
 
 section.tirarFundo {
-  background-color: #9fb4ff;
+  background-color: #15133c;
 }
 section.tirarFundo .container-800 {
   position: relative;
@@ -1068,7 +1068,7 @@ section.tabelaReferencia .container .tabela__result table thead tr th {
   color: #ffffff;
 }
 section.tabelaReferencia .container .tabela__result table tbody tr {
-  background-color: #9fb4ff;
+  background-color: #15133c;
   height: 40px;
   text-align: center;
   transition: all 0.3s;
@@ -1098,7 +1098,7 @@ section.paginacao .container .paginas span {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  background-color: #9fb4ff;
+  background-color: #15133c;
   color: #444444;
 }
 section.paginacao .container .paginas .active {
@@ -1145,7 +1145,7 @@ section.paginacao .container .impressao form .form-control h4 {
 .s-dataEmpresa .container-2 .investido {
   text-align: center;
   border-radius: 2rem;
-  background-color: #ff7a00;
+  background-color: #15133c;
 }
 .s-dataEmpresa .container-2 .investido .card-box {
   position: relative;
@@ -1171,7 +1171,7 @@ section.paginacao .container .impressao form .form-control h4 {
   text-transform: uppercase;
 }
 .s-dataEmpresa .container-2 .investido .card-box:first-child {
-  background-color: #ff7a00;
+  background-color: #15133c;
 }
 .s-dataEmpresa .container-2 .investido:last-child {
   background-color: #02de5a;
@@ -1180,9 +1180,6 @@ section.paginacao .container .impressao form .form-control h4 {
   background: none;
 }
 
-.s-analytic {
-  background-color: #9fb4ff;
-}
 .s-analytic .container-2 {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -1214,9 +1211,6 @@ section.paginacao .container .impressao form .form-control h4 {
 .s-analytic .empresas .empresa button {
   margin: 2rem 0;
 }
-.s-analytic .empresas .empresa button:nth-child(2) {
-  background-color: blue;
-}
 .s-analytic .empresas .empresa span {
   margin: 2rem 0;
 }
@@ -1247,39 +1241,40 @@ section.paginacao .container .impressao form .form-control h4 {
 .s-information-market .container-2 {
   padding-top: 3rem;
   width: 100%;
+  height: 100%;
   display: grid;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  grid-template-columns: auto auto auto;
-  column-gap: 0.6rem;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "one two three";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  column-gap: 0.9rem;
+  row-gap: 2rem;
 }
-.s-information-market .empresaemBaixa {
-  grid-area: one;
+.s-information-market .container-2 .header-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  column-gap: 50px;
+  height: 100%;
+  width: 100%;
 }
-.s-information-market .empresaemAlta {
-  grid-area: two;
-}
-.s-information-market .empresaemRecent {
-  grid-area: three;
-}
-.s-information-market .box__actaualizada h2 {
+.s-information-market .container-2 .header-menu h2 {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  color: #444444;
+  color: #1363df;
   padding: 0;
   margin-bottom: 1rem;
+  transition: all ease-in 0.2s;
+  padding: 5px;
+  cursor: pointer;
 }
-.s-information-market .box__actaualizada h2::after {
-  display: table;
-  content: "";
-  width: 200px;
-  height: 5px;
-  background-color: #3ab0ff;
+.s-information-market .container-2 .header-menu h2:hover {
+  border-bottom: 2px solid #3ab0ff;
 }
 .s-information-market .box__actaualizada .tabela {
+  display: none;
   width: 100%;
   background-color: #ffffff;
 }
@@ -1290,13 +1285,13 @@ section.paginacao .container .impressao form .form-control h4 {
   overflow: hidden;
 }
 .s-information-market .box__actaualizada .tabela table thead {
-  background-color: #9fb4ff;
+  background-color: #15133c;
 }
 .s-information-market .box__actaualizada .tabela table thead tr th {
   padding: 5px;
   text-transform: uppercase;
   text-align: center;
-  color: #444444;
+  color: #ffffff;
 }
 .s-information-market .box__actaualizada .tabela table tbody tr {
   transition: all 0.2s ease-in-out;
@@ -1346,7 +1341,7 @@ section.financiamento .overlay {
   right: 0;
   min-height: 50.5vh;
   z-index: 1;
-  background-color: #9fb4ff;
+  background-color: #15133c;
 }
 section.financiamento .container {
   position: relative;
@@ -1457,7 +1452,7 @@ section.financiamento .container .contactArea .form .form-submit {
   align-items: center;
 }
 section.financiamento .container .contactArea .form .form-submit .send {
-  background-color: #9fb4ff;
+  background-color: #15133c;
   padding: 10px 30px;
   font-size: 2rem;
 }
@@ -1673,6 +1668,10 @@ body {
   background-color: #fff;
 }
 
+.bg-tab {
+  color: #ffffff;
+}
+
 .active a {
   color: #3ab0ff;
 }
@@ -1716,6 +1715,17 @@ body {
   padding: 0 2%;
   width: 100%;
   max-width: 800px;
+}
+
+.actived {
+  display: block !important;
+}
+.actived::after {
+  display: table;
+  content: "";
+  width: 200px;
+  height: 5px;
+  background-color: #3ab0ff;
 }
 
 a {
