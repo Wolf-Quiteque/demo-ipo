@@ -77,6 +77,7 @@ export default function DataEmpresa() {
           </div>
           <div className="empresaemBaixa box__actaualizada">
             <div className=" header-tab tabela actived ">
+              <h3>empresas em baixa</h3>
               <table>
                 <thead>
                   <tr>
@@ -176,8 +177,10 @@ export default function DataEmpresa() {
               </table>
             </div>
           </div>
+
           <div className=" empresaemBaixa box__actaualizada">
             <div className="header-tab tabela">
+              <h3>empresas em alta</h3>
               <table>
                 <thead>
                   <tr>
@@ -277,8 +280,11 @@ export default function DataEmpresa() {
               </table>
             </div>
           </div>
+
           <div className=" empresaemBaixa box__actaualizada">
             <div className="header-tab tabela">
+              <h3>empresas em recente</h3>
+
               <table>
                 <thead>
                   <tr>
