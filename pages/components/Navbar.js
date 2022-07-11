@@ -44,7 +44,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link href="/empresas">
-                  <a>Empresas</a>
+                  <a>Investir</a>
                 </Link>
               </li>
               <li>
@@ -52,11 +52,11 @@ export default function Navbar() {
                   <a>Financiamento</a>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#">
                   <a>Investir</a>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div>
