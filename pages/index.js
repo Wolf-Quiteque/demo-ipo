@@ -36,7 +36,7 @@ export default function Home() {
             {" "}
             Uma maneira incrivel de ver seu negocio crescer é com a{" "}
             <span>
-              EMAINVEST <span id="ga">Puala</span>
+              EMAINVEST <span id="ga"></span>
             </span>{" "}
           </h1>
 
@@ -59,7 +59,7 @@ export default function Home() {
         <h1 className="title-dicas">
           Porque o{" "}
           <strong>
-            EMAINVEST<span>IPO</span>{" "}
+            EMAINVEST<span> IPO</span>{" "}
           </strong>{" "}
           ?
         </h1>

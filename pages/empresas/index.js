@@ -108,8 +108,8 @@ export default function Empresas() {
         </div>
       </section>
 
-      <section className="lista-empresa padding">
-        <div className="container">
+      <section className="s-lista-empresa padding">
+        <div className="compania">
           {empresas
             ? empresas.map((e) => (
                 <div key={e._id} className="company">
@@ -119,7 +119,7 @@ export default function Empresas() {
                   </div>
                   <Link href="empresas/details">
                     <div className="details-company">
-                      <h2>{e.nome}</h2>
+                      <a>{e.nome}</a>
                       {/* <div className="stars">*****</div> */}
                     </div>
                   </Link>
@@ -127,7 +127,7 @@ export default function Empresas() {
               ))
             : "....aguarde"}
         </div>
-        <button className="btn btn-primary btn-center">ver mais</button>
+        <button className="br  ">ver mais</button>
       </section>
     </>
   );
