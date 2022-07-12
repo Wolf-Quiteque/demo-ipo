@@ -148,12 +148,22 @@ button.reset a {
 
 .input-text {
   width: 100%;
-  height: 50px;
+  height: 45px;
   padding: 15px;
   font-size: 2rem;
   color: #787878;
   max-width: 450px;
   border: 1px solid #ccc;
+}
+
+.input-text-1 {
+  width: 100%;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  color: #787878;
+  max-width: 450px;
+  border: 1px solid #ccc;
+  border: 1px solid #383bff;
 }
 
 section.hero {
@@ -296,6 +306,7 @@ section.ipo .container-2 .caixa-1 .header-fin {
 section.ipo .container-2 .caixa-1 .header-fin-tab {
   border-right: 2px solid #1363df;
   padding: 2rem;
+  margin-bottom: 2rem;
 }
 section.ipo .container-2 .caixa-2 {
   width: 100%;
@@ -823,18 +834,6 @@ footer.rodape section.footer-2 .container .news h2 {
 footer.rodape section.footer-2 .container .news .form {
   width: 350px;
 }
-footer.rodape section.footer-2 .container .news .form .form-control input {
-  width: 100%;
-  height: 50px;
-  padding-left: 15px;
-  color: #787878;
-}
-footer.rodape section.footer-2 .container .news .form .form-control input::placeholder {
-  font-size: 2rem;
-  text-align: center;
-  color: #ccc;
-}
-
 section.detalhes-company .container .informar {
   position: relative;
   display: flex;
@@ -1535,6 +1534,93 @@ section.financiamento .container .contactArea .form .form-submit [type=submit] {
   padding: 10px 20px;
   border: 1px solid #3ab0ff;
   cursor: pointer;
+}
+
+section.navBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+  border-bottom: 2px solid #1363df;
+  padding: 0 20rem;
+  height: 70px;
+}
+section.navBar .avatar {
+  text-align: left;
+  flex: 1 0 0;
+  flex-basis: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.navBar .avatar .img-avatar {
+  width: 100%;
+  height: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+}
+section.navBar .avatar .name-types {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+}
+section.navBar .avatar .name-types span {
+  display: block;
+}
+section.navBar .avatar .name-types .name-type {
+  margin-right: 25px;
+  color: #3ab0ff;
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-family: "Lilita One", sans-serif;
+}
+section.navBar .form {
+  width: 600px;
+  align-self: center;
+  text-align: center;
+}
+section.navBar .form form {
+  max-width: 600px;
+  flex: 2 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: blue;
+}
+section.navBar .form form button {
+  padding: 1rem;
+  border: 1px solid #383bff;
+}
+section.navBar .bell {
+  flex: 1 0 0;
+  text-align: right;
+}
+
+section#sideBar {
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  border-right: 1px solid #ccc;
+  margin-top: 70px;
+}
+
+section.side-post {
+  border-left: 1px solid #ccc;
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 70px;
 }
 
 section.login-acesso {

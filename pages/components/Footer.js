@@ -69,7 +69,7 @@ export default function Footer() {
               <h2>Receba actualizacoes</h2>
               <form action="" className="form">
                 <div className="form-control">
-                  <input type="text" placeholder="seu email" />
+                  <input className="input-text" type="text" placeholder="seu email" />
                 </div>
                 <button className="btn-2 primary">inscrever-se</button>
               </form>

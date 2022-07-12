@@ -138,14 +138,21 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            {/* <div className="header-fin-tab">
+            <div className="header-fin-tab">
               <h2>Financiamento</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Excepturi minus, ea facere porro commodi perferendis ipsum!
                 Nesciunt iure voluptatem libero!
               </p>
-            </div> */}
+              <div className="link">
+                <Link href="">
+                  <li>
+                    <a>ler mais</a>
+                  </li>
+                </Link>
+              </div>
+            </div>
           </div>
 
           <div className="caixa-2">

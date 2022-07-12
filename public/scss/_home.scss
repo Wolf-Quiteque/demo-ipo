@@ -196,6 +196,7 @@ section.ipo {
         // background-color: rgb(223, 223, 223);
         border-right: 2px solid $corSecondary;
         padding: 2rem;
+        margin-bottom: 2rem;
       }
     }
 
@@ -267,10 +268,7 @@ section.aplicar {
       display: grid;
       gap: 25px;
       grid-template-columns: 250px 250px;
-      // padding: 10px;
-      // grid-template-columns: 1fr 1fr;
-      // justify-items: center;
-      // align-content: center;
+
       .img-aplicar {
         width: 100%;
         max-width: 300px;
