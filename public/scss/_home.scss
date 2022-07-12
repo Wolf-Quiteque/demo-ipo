@@ -167,23 +167,6 @@ section.ipo {
         display: flex;
         column-gap: 2rem;
         justify-content: space-between;
-
-        button {
-          padding: 10px 36px;
-          background-color: $corPrimaria;
-          color: $corWhite;
-          font-weight: 400;
-          &:hover {
-            background-color: $corSecondary;
-          }
-          &:last-child {
-            background: none;
-            color: darkblue;
-            &:hover {
-              background-color: $corSecondary;
-            }
-          }
-        }
       }
 
       .header-fin-tab {
@@ -223,9 +206,12 @@ section.ipo {
 
           button {
             padding: 0 10px;
-
             background-color: $corSecondary;
             color: $corWhite;
+
+            &:hover {
+              background-color: $corfile;
+            }
           }
         }
       }

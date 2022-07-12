@@ -119,6 +119,24 @@ button.reset a {
   color: #1363df;
 }
 
+.btn-main {
+  padding: 10px 36px;
+  background-color: #1363df;
+  color: #ffffff;
+  font-weight: 400;
+}
+.btn-main:hover {
+  background-color: #3ab0ff;
+}
+.btn-main:last-child {
+  background: none;
+  color: darkblue;
+}
+.btn-main:last-child:hover {
+  background-color: #1363df;
+  color: #ffffff;
+}
+
 section.hero {
   background: linear-gradient(94deg, rgba(0, 0, 0, 0.5) 0%, rgba(82, 85, 251, 0.2525385154) 100%), url("/image/HERO.jpg");
   background-size: cover;
@@ -238,22 +256,6 @@ section.ipo .container-2 .caixa-1 .header-fin {
   column-gap: 2rem;
   justify-content: space-between;
 }
-section.ipo .container-2 .caixa-1 .header-fin button {
-  padding: 10px 36px;
-  background-color: #3ab0ff;
-  color: #ffffff;
-  font-weight: 400;
-}
-section.ipo .container-2 .caixa-1 .header-fin button:hover {
-  background-color: #1363df;
-}
-section.ipo .container-2 .caixa-1 .header-fin button:last-child {
-  background: none;
-  color: darkblue;
-}
-section.ipo .container-2 .caixa-1 .header-fin button:last-child:hover {
-  background-color: #1363df;
-}
 section.ipo .container-2 .caixa-1 .header-fin-tab {
   border-right: 2px solid #1363df;
   padding: 2rem;
@@ -291,6 +293,9 @@ section.ipo .container-2 .caixa-2 .form form button {
   padding: 0 10px;
   background-color: #1363df;
   color: #ffffff;
+}
+section.ipo .container-2 .caixa-2 .form form button:hover {
+  background-color: #15133c;
 }
 
 section.aplicar {

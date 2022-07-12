@@ -88,3 +88,23 @@ button.reset {
     color: $corSecondary;
   }
 }
+
+// novos estilos para os botoes da site
+
+.btn-main {
+  padding: 10px 36px;
+  background-color: $corSecondary;
+  color: $corWhite;
+  font-weight: 400;
+  &:hover {
+    background-color: $corPrimaria;
+  }
+  &:last-child {
+    background: none;
+    color: darkblue;
+    &:hover {
+      background-color: $corSecondary;
+      color: $corWhite;
+    }
+  }
+}

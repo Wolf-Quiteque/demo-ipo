@@ -120,8 +120,8 @@ export default function Home() {
 
           <div className="caixa-1">
             <div className="header-fin">
-              <button>Investimento</button>
-              <button>Financiamento</button>
+              <button className="btn-main">Investimento</button>
+              <button className="btn-main">Financiamento</button>
             </div>
             <div className="header-fin-tab">
               <h2>Investimento</h2>
