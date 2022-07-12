@@ -151,6 +151,7 @@ section.ipo {
     column-gap: 3rem;
     grid-template-areas:
       "one one one"
+      "two two three"
       "two two three";
 
     .title {
@@ -162,7 +163,29 @@ section.ipo {
       width: 100%;
       max-width: 700px;
       // background-color: blue;
+      .link {
+        li {
+          width: 100%;
+          max-width: 200px;
 
+          a {
+            // display: inline-block;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            color: $corSecondary;
+            padding: 12px;
+            cursor: pointer;
+            transition: all ease-in-out 0.2s;
+            border-bottom: 1px solid $corPrimaria;
+            border-width: 1px;
+
+            &:hover {
+              background-color: rgba(183, 183, 183, 0.245);
+            }
+          }
+        }
+      }
       .header-fin {
         display: flex;
         column-gap: 2rem;
@@ -180,7 +203,6 @@ section.ipo {
       width: 100%;
       grid-area: three;
       justify-self: flex-end;
-      // background-color: blueviolet;
       h2 {
         text-align: center;
         align-self: center;
@@ -194,25 +216,6 @@ section.ipo {
         form {
           width: 100%;
           display: flex;
-          input[type="text"] {
-            width: 100%;
-            height: 50px;
-            padding: 15px;
-            font-size: 2rem;
-            color: #787878;
-            max-width: 450px;
-            border: 1px solid #ccc;
-          }
-
-          button {
-            padding: 0 10px;
-            background-color: $corSecondary;
-            color: $corWhite;
-
-            &:hover {
-              background-color: $corPrimaria;
-            }
-          }
         }
       }
     }

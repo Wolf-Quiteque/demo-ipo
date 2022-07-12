@@ -137,6 +137,25 @@ button.reset a {
   color: #ffffff;
 }
 
+.btn-input {
+  padding: 0 10px;
+  background-color: #1363df;
+  color: #ffffff;
+}
+.btn-input:hover {
+  background-color: #3ab0ff;
+}
+
+.input-text {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  font-size: 2rem;
+  color: #787878;
+  max-width: 450px;
+  border: 1px solid #ccc;
+}
+
 section.hero {
   background: linear-gradient(94deg, rgba(0, 0, 0, 0.5) 0%, rgba(82, 85, 251, 0.2525385154) 100%), url("/image/HERO.jpg");
   background-size: cover;
@@ -241,7 +260,7 @@ section.ipo .container-2 {
   justify-content: center;
   align-items: flex-start;
   column-gap: 3rem;
-  grid-template-areas: "one one one" "two two three";
+  grid-template-areas: "one one one" "two two three" "two two three";
 }
 section.ipo .container-2 .title {
   grid-area: one;
@@ -250,6 +269,24 @@ section.ipo .container-2 .caixa-1 {
   grid-area: two;
   width: 100%;
   max-width: 700px;
+}
+section.ipo .container-2 .caixa-1 .link li {
+  width: 100%;
+  max-width: 200px;
+}
+section.ipo .container-2 .caixa-1 .link li a {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  color: #1363df;
+  padding: 12px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+  border-bottom: 1px solid #3ab0ff;
+  border-width: 1px;
+}
+section.ipo .container-2 .caixa-1 .link li a:hover {
+  background-color: rgba(183, 183, 183, 0.245);
 }
 section.ipo .container-2 .caixa-1 .header-fin {
   display: flex;
@@ -279,23 +316,6 @@ section.ipo .container-2 .caixa-2 .form {
 section.ipo .container-2 .caixa-2 .form form {
   width: 100%;
   display: flex;
-}
-section.ipo .container-2 .caixa-2 .form form input[type=text] {
-  width: 100%;
-  height: 50px;
-  padding: 15px;
-  font-size: 2rem;
-  color: #787878;
-  max-width: 450px;
-  border: 1px solid #ccc;
-}
-section.ipo .container-2 .caixa-2 .form form button {
-  padding: 0 10px;
-  background-color: #1363df;
-  color: #ffffff;
-}
-section.ipo .container-2 .caixa-2 .form form button:hover {
-  background-color: #3ab0ff;
 }
 
 section.aplicar {

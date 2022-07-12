@@ -130,6 +130,13 @@ export default function Home() {
                 Excepturi minus, ea facere porro commodi perferendis ipsum!
                 Nesciunt iure voluptatem libero!
               </p>
+              <div className="link">
+                <Link href="">
+                  <li>
+                    <a>ler mais</a>
+                  </li>
+                </Link>
+              </div>
             </div>
             {/* <div className="header-fin-tab">
               <h2>Financiamento</h2>
@@ -145,8 +152,12 @@ export default function Home() {
             <div className="form">
               <h2>simulador de ganhos</h2>
               <form action="">
-                <input type="text" placeholder="digite o valor..." />
-                <button>simular</button>
+                <input
+                  className="input-text"
+                  type="text"
+                  placeholder="digite o valor..."
+                />
+                <button className="btn-input">simular</button>
               </form>
             </div>
           </div>
