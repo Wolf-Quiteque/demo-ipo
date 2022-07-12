@@ -18,11 +18,16 @@ section.hero {
 
   h1 {
     top: -60px;
-    max-width: 500px;
-    font-size: 3.6rem;
+    width: 100%;
+    max-width: 700px;
+    font-size: 4rem;
     color: $corWhite;
     margin-bottom: 3rem;
+    background-color: rgba(22, 9, 9, 0.218);
+    text-transform: uppercase;
+    padding: 2rem;
     z-index: 100;
+    font-family: "Montserrat", cursive;
 
     span {
       color: $corPrimaria;
@@ -31,7 +36,7 @@ section.hero {
 }
 section.barra {
   height: 70px;
-  background-color: $corSecondary;
+  background-color: $corfile;
   .barra-flex {
     display: flex;
     align-items: center;
@@ -106,32 +111,125 @@ section.dicas {
   margin-top: 100px;
 }
 
+// section.ipo {
+//   text-align: center;
+//   h2.title {
+//     margin: 5.6rem auto;
+//     font-size: 3rem;
+//     max-width: 600px;
+//     font-weight: 300;
+//     text-align: center;
+//     span {
+//       color: $corPrimaria;
+//     }
+//   }
+//   h3 {
+//     margin: 1.9rem 0;
+//   }
+
+//   div > .box-flex {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//   }
+
+//   .circ {
+//     width: 33.33%;
+//     text-align: center;
+//   }
+// }
+
 section.ipo {
-  text-align: center;
-  h2.title {
-    margin: 5.6rem auto;
-    font-size: 3rem;
-    max-width: 600px;
-    font-weight: 300;
-    text-align: center;
-    span {
-      color: $corPrimaria;
-    }
-  }
-  h3 {
-    margin: 1.9rem 0;
-  }
-
-  div > .box-flex {
-    display: flex;
+  .container-2 {
+    // background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 100px auto auto;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+    align-items: flex-start;
+    column-gap: 3rem;
+    grid-template-areas:
+      "one one one"
+      "two two three";
 
-  .circ {
-    width: 33.33%;
-    text-align: center;
+    .title {
+      grid-area: one;
+    }
+
+    .caixa-1 {
+      grid-area: two;
+      width: 100%;
+      max-width: 700px;
+      // background-color: blue;
+
+      .header-fin {
+        display: flex;
+        column-gap: 2rem;
+        justify-content: space-between;
+
+        button {
+          padding: 10px 36px;
+          background-color: $corPrimaria;
+          color: $corWhite;
+          font-weight: 400;
+          &:hover {
+            background-color: $corSecondary;
+          }
+          &:last-child {
+            background: none;
+            color: darkblue;
+            &:hover {
+              background-color: $corSecondary;
+            }
+          }
+        }
+      }
+
+      .header-fin-tab {
+        // background-color: rgb(223, 223, 223);
+        border-right: 2px solid $corSecondary;
+        padding: 2rem;
+      }
+    }
+
+    .caixa-2 {
+      width: 100%;
+      grid-area: three;
+      justify-self: flex-end;
+      // background-color: blueviolet;
+      h2 {
+        text-align: center;
+        align-self: center;
+        font-size: 5rem;
+      }
+      .form {
+        margin-top: 1.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        form {
+          width: 100%;
+          display: flex;
+          input[type="text"] {
+            width: 100%;
+            height: 50px;
+            padding: 15px;
+            font-size: 2rem;
+            color: #787878;
+            max-width: 450px;
+            border: 1px solid #ccc;
+          }
+
+          button {
+            padding: 0 10px;
+
+            background-color: $corSecondary;
+            color: $corWhite;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -139,6 +237,8 @@ section.ipo {
 
 section.aplicar {
   border-bottom: 1px solid $corPrimaria;
+
+  // background-attachment: ;
 
   .container {
     padding: 4rem 0;
@@ -312,7 +412,8 @@ section.empresas {
 // section de gerenciamento
 
 section.processo {
-  border-bottom: 1px solid $corPrimaria;
+  // border-bottom: 1px solid $corPrimaria;
+  background-color: #f1f1f1;
 
   .container {
     position: relative;
@@ -326,21 +427,17 @@ section.processo {
       text-align: center;
       width: 100%;
       max-width: 600px;
-      padding: 2rem ;
+      padding: 2rem;
       transition: all ease-in 0.2s;
       &:hover {
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
       }
-      p{
+      p {
         text-align: justify;
       }
     }
     .proce-image {
       border-bottom: 6px solid $corPrimaria;
-      // position: absolute;
-      // // position: relative;
-      // top: -86px;
-      // right: 99px;
 
       .image {
         object-fit: cover;
@@ -357,25 +454,24 @@ section.processo {
 // Area de+ Nossos parceiros
 
 section.parceiros {
-  background-color: $corSecondary;
+  // background-color: #d9d9d9;
   h1.title {
     text-align: center;
-    color: #fff;
+    font-size: 4rem;
+    color: $corTexto;
+    font-family: "lilita One", sans-serif;
   }
-  .min-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid: 50px;
-    height: 100%;
-    overflow: hidden;
+  .container-2 {
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    column-gap: 12px;
     .parce-slader {
-      margin: 0 15px;
-      max-width: 50px;
+      background-color: #ccc;
+    }
+    .parce-slader {
     }
 
     .parce-slader:first-child {
-      margin-left: 0;
     }
   }
 }
@@ -385,10 +481,10 @@ section.parceiros {
 section.testemunho {
   .title {
     text-align: center;
-    color: $corWhite;
+    color: $corTexto;
     text-transform: uppercase;
   }
-  background-color: $corDark;
+  // background-color: $corDark;
   .min-container {
     max-width: 760px;
     // background-color: #ff8181f0;
@@ -400,7 +496,7 @@ section.testemunho {
 
     .progress-bar {
       height: 4px;
-      background-color: $corWhite;
+      background-color: $corTexto;
       width: 100%;
       animation: barra 10s linear infinite;
       transform-origin: left;
@@ -414,7 +510,7 @@ section.testemunho {
 
     .testimonial {
       line-height: 1.5;
-      color: $corWhite;
+      color: $corTexto;
       margin: 1rem 0;
       text-align: justify;
     }
@@ -433,13 +529,13 @@ section.testemunho {
 
     .user-details {
       margin-left: 23px;
-      color: $corWhite;
+      color: $corTexto;
       .username {
         margin: 2px 0;
-        color: $corWhite;
+        color: $corTexto;
       }
       .role {
-        color: $corWhite;
+        color: $corTexto;
         margin: 1px 0;
       }
     }

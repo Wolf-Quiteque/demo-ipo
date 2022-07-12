@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2? family= Lato:wght@400;700;900 & family= Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300 & family= Roboto:wght@400;500;700;900 & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@400;500;600;700;900&display=swap");
 :root {
   font-size: 62.5%;
 }
@@ -30,6 +30,7 @@
 .header .navbar .menu li a {
   color: #333;
   padding: 10px 10px;
+  font-family: "Lilita One", sans-serif;
 }
 
 .btn {
@@ -136,11 +137,16 @@ section.hero .hero-flex {
 }
 section.hero h1 {
   top: -60px;
-  max-width: 500px;
-  font-size: 3.6rem;
+  width: 100%;
+  max-width: 700px;
+  font-size: 4rem;
   color: #ffffff;
   margin-bottom: 3rem;
+  background-color: rgba(22, 9, 9, 0.218);
+  text-transform: uppercase;
+  padding: 2rem;
   z-index: 100;
+  font-family: "Montserrat", cursive;
 }
 section.hero h1 span {
   color: #3ab0ff;
@@ -148,7 +154,7 @@ section.hero h1 span {
 
 section.barra {
   height: 70px;
-  background-color: #1363df;
+  background-color: #15133c;
 }
 section.barra .barra-flex {
   display: flex;
@@ -210,31 +216,81 @@ section.dicas .box-dicas .info-dicas {
   margin-top: 100px;
 }
 
-section.ipo {
-  text-align: center;
-}
-section.ipo h2.title {
-  margin: 5.6rem auto;
-  font-size: 3rem;
-  max-width: 600px;
-  font-weight: 300;
-  text-align: center;
-}
-section.ipo h2.title span {
-  color: #3ab0ff;
-}
-section.ipo h3 {
-  margin: 1.9rem 0;
-}
-section.ipo div > .box-flex {
-  display: flex;
+section.ipo .container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 100px auto auto;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items: flex-start;
+  column-gap: 3rem;
+  grid-template-areas: "one one one" "two two three";
 }
-section.ipo .circ {
-  width: 33.33%;
+section.ipo .container-2 .title {
+  grid-area: one;
+}
+section.ipo .container-2 .caixa-1 {
+  grid-area: two;
+  width: 100%;
+  max-width: 700px;
+}
+section.ipo .container-2 .caixa-1 .header-fin {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: space-between;
+}
+section.ipo .container-2 .caixa-1 .header-fin button {
+  padding: 10px 36px;
+  background-color: #3ab0ff;
+  color: #ffffff;
+  font-weight: 400;
+}
+section.ipo .container-2 .caixa-1 .header-fin button:hover {
+  background-color: #1363df;
+}
+section.ipo .container-2 .caixa-1 .header-fin button:last-child {
+  background: none;
+  color: darkblue;
+}
+section.ipo .container-2 .caixa-1 .header-fin button:last-child:hover {
+  background-color: #1363df;
+}
+section.ipo .container-2 .caixa-1 .header-fin-tab {
+  border-right: 2px solid #1363df;
+  padding: 2rem;
+}
+section.ipo .container-2 .caixa-2 {
+  width: 100%;
+  grid-area: three;
+  justify-self: flex-end;
+}
+section.ipo .container-2 .caixa-2 h2 {
   text-align: center;
+  align-self: center;
+  font-size: 5rem;
+}
+section.ipo .container-2 .caixa-2 .form {
+  margin-top: 1.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+section.ipo .container-2 .caixa-2 .form form {
+  width: 100%;
+  display: flex;
+}
+section.ipo .container-2 .caixa-2 .form form input[type=text] {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  font-size: 2rem;
+  color: #787878;
+  max-width: 450px;
+  border: 1px solid #ccc;
+}
+section.ipo .container-2 .caixa-2 .form form button {
+  padding: 0 10px;
+  background-color: #1363df;
+  color: #ffffff;
 }
 
 section.aplicar {
@@ -379,7 +435,7 @@ section.empresas .container .box-company {
 }
 
 section.processo {
-  border-bottom: 1px solid #3ab0ff;
+  background-color: #f1f1f1;
 }
 section.processo .container {
   position: relative;
@@ -414,35 +470,23 @@ section.processo .container .proce-image .image {
   height: 400px;
 }
 
-section.parceiros {
-  background-color: #1363df;
-}
 section.parceiros h1.title {
   text-align: center;
-  color: #fff;
+  font-size: 4rem;
+  color: #242424;
+  font-family: "lilita One", sans-serif;
 }
-section.parceiros .min-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid: 50px;
-  height: 100%;
-  overflow: hidden;
+section.parceiros .container-2 {
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  column-gap: 12px;
 }
-section.parceiros .min-container .parce-slader {
-  margin: 0 15px;
-  max-width: 50px;
-}
-section.parceiros .min-container .parce-slader:first-child {
-  margin-left: 0;
-}
-
-section.testemunho {
-  background-color: rgba(0, 0, 54, 0.9411764706);
+section.parceiros .container-2 .parce-slader {
+  background-color: #ccc;
 }
 section.testemunho .title {
   text-align: center;
-  color: #ffffff;
+  color: #242424;
   text-transform: uppercase;
 }
 section.testemunho .min-container {
@@ -455,7 +499,7 @@ section.testemunho .min-container {
 }
 section.testemunho .min-container .progress-bar {
   height: 4px;
-  background-color: #ffffff;
+  background-color: #242424;
   width: 100%;
   animation: barra 10s linear infinite;
   transform-origin: left;
@@ -467,7 +511,7 @@ section.testemunho .min-container .progress-bar {
 }
 section.testemunho .min-container .testimonial {
   line-height: 1.5;
-  color: #ffffff;
+  color: #242424;
   margin: 1rem 0;
   text-align: justify;
 }
@@ -484,14 +528,14 @@ section.testemunho .min-container .card .card-image {
 }
 section.testemunho .min-container .user-details {
   margin-left: 23px;
-  color: #ffffff;
+  color: #242424;
 }
 section.testemunho .min-container .user-details .username {
   margin: 2px 0;
-  color: #ffffff;
+  color: #242424;
 }
 section.testemunho .min-container .user-details .role {
-  color: #ffffff;
+  color: #242424;
   margin: 1px 0;
 }
 
@@ -690,13 +734,13 @@ footer.rodape section.footer-1 .container::before, footer.rodape section.footer-
   clear: both;
 }
 footer.rodape section.footer-1 .container .footer-social {
-  border-bottom: 1px solid #444444;
+  border-bottom: 1px solid #242424;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 footer.rodape section.footer-1 .container .footer-social .social i {
-  color: #444444;
+  color: #242424;
   margin: 0 24px;
   font-size: 2rem;
   transition: all ease-in 0.2s;
@@ -731,17 +775,17 @@ footer.rodape section.footer-1 .container .footer-contact .contact-info {
   padding: 10px;
 }
 footer.rodape section.footer-1 .container .footer-contact .contact-info i {
-  color: #444444;
+  color: #242424;
 }
 footer.rodape section.footer-1 .container .footer-contact .contact-info h3 {
-  color: #444444;
+  color: #242424;
   font-size: 1.3rem;
 }
 footer.rodape section.footer-1 .container .footer-contact .contact-info p {
-  color: #444444;
+  color: #242424;
 }
 footer.rodape section.footer-2 {
-  color: #444444 !important;
+  color: #242424 !important;
 }
 footer.rodape section.footer-2 .container {
   display: flex;
@@ -749,7 +793,7 @@ footer.rodape section.footer-2 .container {
 }
 footer.rodape section.footer-2 .container .news h2 {
   text-align: center;
-  color: #444444;
+  color: #242424;
 }
 footer.rodape section.footer-2 .container .news .form {
   width: 350px;
@@ -1099,7 +1143,7 @@ section.paginacao .container .paginas span {
   line-height: 40px;
   border-radius: 50%;
   background-color: #15133c;
-  color: #444444;
+  color: #242424;
 }
 section.paginacao .container .paginas .active {
   background-color: #3ab0ff;
@@ -1368,7 +1412,7 @@ section.financiamento .container .texto .title {
   margin: 0;
 }
 section.financiamento .container .texto .warning {
-  color: #444444;
+  color: #242424;
   font-weight: 600;
 }
 section.financiamento .container .contactArea {
@@ -1413,7 +1457,7 @@ section.financiamento .container .contactArea .form .form-textarea textarea {
   outline: none;
   resize: none;
   font-size: 1.6rem;
-  color: #444444;
+  color: #242424;
 }
 section.financiamento .container .contactArea .form .form-textarea textarea:is(:focus, :focus-visible) {
   border: 2px solid #1363df;
@@ -1653,7 +1697,6 @@ section.login-acesso .min-container .login-area .login-acess .form .account a:ho
 
 html,
 body {
-  font-family: "Poppins", sans-serif !important;
   height: 100%;
   min-height: 100vh;
   display: flex;
@@ -1664,8 +1707,10 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1.6rem;
-  line-height: 125%;
+  line-height: 150%;
+  letter-spacing: -1;
   background-color: #fff;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .bg-tab {
@@ -1746,6 +1791,11 @@ h6 {
   padding: 0;
   font-size: 2rem;
   color: #444444;
+}
+
+h2 {
+  font-family: "lilita One", sans-serif;
+  font-weight: normal;
 }
 
 p {

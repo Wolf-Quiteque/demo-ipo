@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2? family= Lato:wght@400;700;900 & family= Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300 & family= Roboto:wght@400;500;700;900 & display=swap");
+// @import url("https://fonts.googleapis.com/css2? family= Lato:wght@400;700;900 & family= Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300 & family= Roboto:wght@400;500;700;900 & display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@400;500;600;700;900&display=swap");
+
 $corPrimaria: #3ab0ff;
 $corSecondary: #1363df;
 $corBackground-1: #9fb4ff;
@@ -12,7 +15,7 @@ $corLink: #787878;
 $corDark: #000036f0;
 $corBackground: #f1f1f1;
 $corWhite: #ffffff;
-$corTexto: #444444;
+$corTexto: #242424;
 $corGreen: #02de5a;
 $corGray: #ccc;
 $corWarning: #ff7a00;
@@ -62,7 +65,7 @@ $corFundoLinear: linear-gradient(
 
 html,
 body {
-  font-family: "Poppins", sans-serif !important;
+  // font-family: "Poppins", sans-serif !important;
   height: 100%;
   min-height: 100vh;
   display: flex;
@@ -72,8 +75,11 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1.6rem;
-  line-height: 125%;
+  line-height: 150%;
+  letter-spacing: -1;
   background-color: #fff;
+  // font-family: "Lilita One", cursive;
+  font-family: "Montserrat", sans-serif !important;
 }
 .bg-tab {
   color: $corWhite;
@@ -147,6 +153,10 @@ h6 {
   padding: 0;
   font-size: 2rem;
   color: #444444;
+}
+h2 {
+  font-family: "lilita One", sans-serif;
+  font-weight: normal;
 }
 p {
   line-height: 1.5;

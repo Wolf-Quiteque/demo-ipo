@@ -108,7 +108,7 @@ export default function Home() {
       </section>
 
       <section className="ipo padding">
-        <div className="container box-flex">
+        <div className="container-2 box-flex">
           <h2 className="title">
             Com o{" "}
             <strong>
@@ -118,34 +118,44 @@ export default function Home() {
             de duas maneira
           </h2>
 
-          <div className="box-ipo flex">
-            <div className="circ box-flex">
-              <Image src="/image/po1.svg" width={200} height={200} alt="" />
-              <h3 className="title">solicitar um financiamento</h3>
-              <p className="description">
-                basta pedir um finciamento para que começa a dar vida aos seus
-                investimentos.
+          <div className="caixa-1">
+            <div className="header-fin">
+              <button>Investimento</button>
+              <button>Financiamento</button>
+            </div>
+            <div className="header-fin-tab">
+              <h2>Investimento</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi minus, ea facere porro commodi perferendis ipsum!
+                Nesciunt iure voluptatem libero!
               </p>
             </div>
-            <div className="circ box-flex">
-              <Image
-                className="box-image"
-                src="/image/po1.svg"
-                width={200}
-                height={200}
-                alt=""
-              />
-              <h3 className="title">solicitar um financiamento</h3>
-              <p className="description">
-                basta pedir um finciamento para que começa a dar vida aos seus
-                investimentos.
+            {/* <div className="header-fin-tab">
+              <h2>Financiamento</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi minus, ea facere porro commodi perferendis ipsum!
+                Nesciunt iure voluptatem libero!
               </p>
+            </div> */}
+          </div>
+
+          <div className="caixa-2">
+            <div className="form">
+              <h2>simulador de ganhos</h2>
+              <form action="">
+                <input type="text" placeholder="digite o valor..." />
+                <button>simular</button>
+              </form>
             </div>
           </div>
+
+          {/* <button className="btn btn-primary top">Ler mais</button> */}
         </div>
-        <button className="btn btn-primary top">Ler mais</button>
       </section>
 
+      {/* Area aplicar  */}
       <section className="aplicar ">
         <div className="container">
           <div className="texto">
@@ -305,25 +315,25 @@ export default function Home() {
 
       {/* Area dos parceiros  */}
       <section className="parceiros padding">
-        <h1 className="title">Nossos parceieros</h1>
-        <div className="min-container">
+        <h1 className="title">Nossos Parceiros</h1>
+        <div className="container-2 ">
           <div className="parce-slader">
-            <Image src="/image/opt.svg" width={100} height={100} alt="" />
+            <img src="/image/opt.svg" alt="" />
           </div>
           <div className="parce-slader">
-            <Image src="/image/opt.svg" width={100} height={100} alt="" />
+            <img src="/image/opt.svg" alt="" />
           </div>
           <div className="parce-slader">
-            <Image src="/image/opt.svg" width={100} height={100} alt="" />
+            <img src="/image/opt.svg" alt="" />
           </div>
           <div className="parce-slader">
-            <Image src="/image/opt.svg" width={100} height={100} alt="" />
+            <img src="/image/opt.svg" alt="" />
           </div>
           <div className="parce-slader">
-            <Image src="/image/opt.svg" width={100} height={100} alt="" />
+            <img src="/image/opt.svg" alt="" />
           </div>
           <div className="parce-slader">
-            <Image src="/image/opt.svg" width={100} height={100} alt="" />
+            <img src="/image/opt.svg" alt="" />
           </div>
         </div>
       </section>
