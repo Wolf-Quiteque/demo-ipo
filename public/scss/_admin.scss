@@ -1,5 +1,7 @@
 section.navBar {
   position: fixed;
+  z-index: 1000;
+  background-color: #ffffff;
   top: 0;
   right: 0;
   left: 0;
@@ -57,11 +59,9 @@ section.navBar {
       align-items: center;
       justify-content: center;
       width: 100%;
-      background-color: blue;
 
       button {
         padding: 1rem;
-        border: 1px solid #383bff;
       }
     }
   }
@@ -72,12 +72,146 @@ section.navBar {
   }
 }
 
+section.content {
+  margin: 7rem 25rem 0 25rem;
+  padding: 2rem;
+  // background-color: red;
+  .main-content {
+    .stage-1 {
+      // @include flex(row, flex-start, space-between);
+      display: grid;
+      align-items: flex-start;
+      grid-template-columns: 2fr auto 2fr;
+      // grid-template-rows: 2fr 2fr 2fr;
+      justify-content: space-between;
+      row-gap: 2rem;
+      grid-template-areas:
+        "one one two"
+        "one one three";
+    }
+
+    .control-data {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.8rem;
+      height: 12rem;
+      width: 100%;
+      max-width: 60.5rem;
+      box-shadow: 0;
+      .financ {
+        grid-area: one;
+        @include shadow(10px);
+        .name-section {
+          background: #ffe600;
+          border-radius: 10px 10px 0px 0px;
+          h3 {
+            padding: 0.9rem;
+          }
+        }
+        table {
+          width: 100%;
+
+          thead,
+          tbody {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    // dados relacionados com status da company
+
+    .total-financ {
+      grid-area: two;
+      width: 100%;
+      max-width: 70rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row: auto auto;
+      gap: 1rem;
+      .box {
+        color: #ffffff;
+        @include flex(row, center, space-between);
+        width: 100%;
+        background: linear-gradient(90.1deg, #8d8fff 0.08%, #383bff 99.91%);
+        opacity: 0.9;
+        background-color: #ffffff;
+        height: 5.5rem;
+        padding: 1rem 0.8rem;
+        // margin: 1rem 0;
+        .entry {
+          // margin-right: 3rem;
+        }
+        .icon {
+          @include flex(row, center, center);
+
+          margin: 0 2rem;
+
+          height: 40px;
+          width: 40px;
+          background-color: #383bff;
+          border-radius: 100%;
+        }
+      }
+    }
+
+    .relacionados {
+      // @include shadow(10px);
+      margin-top: 1.5rem;
+      max-width: 70rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      // grid-row: auto auto;
+      row-gap: 1.6rem;
+      grid-area: three;
+      // height: 23rem;
+      padding: 0;
+      // background-color: #3d3d3d;
+      align-self: flex-end;
+
+      // gap: 2rem;
+      .zero {
+        .zero-main {
+          padding: 0.5rem;
+          max-width: 20rem;
+
+          // @include flex(row, center, center);
+          @include shadow(10px);
+
+          .one {
+            @include flex(row, center, space-between);
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.grafico-listaUser {
+  margin-top: 3rem;
+  background-color: #383bff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .graphic {
+    background-color: red($color: #ff1919);
+    max-width: 60rem;
+    width: 100%;
+  }
+  .listaUser {
+    background-color: rgb(225, 0, 255);
+  }
+}
+
 // sideBar estilos relacionados
 
 section#sideBar {
   // background-color: #383bff;
   width: 100%;
-  max-width: 250px;
+  max-width: 25rem;
   height: 100%;
   position: fixed;
   top: 0;
@@ -89,10 +223,10 @@ section.side-post {
   // background-color: #383bff;
   border-left: 1px solid #ccc;
   width: 100%;
-  max-width: 250px;
+  max-width: 25rem;
   height: 100%;
   position: fixed;
   top: 0;
   right: 0;
-  margin-top: 70px;
+  margin-top: 7rem;
 }

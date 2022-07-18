@@ -1,6 +1,161 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@400;500;600;700;900&display=swap");
-:root {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.hight {
+  min-height: 70vh;
+}
+
+html {
   font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: -1;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.bg-tab {
+  color: #ffffff;
+}
+
+.active a {
+  color: #3ab0ff;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.padding {
+  padding: 70px 0;
+}
+
+.padding-20 {
+  padding: 20px 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2%;
+  max-width: 1440px;
+}
+
+.container-2 {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px 2rem 15px;
+}
+
+.min-container {
+  margin: 0 auto;
+  padding: 0 2%;
+  max-width: 600px;
+}
+
+.container-800 {
+  margin: 0 auto;
+  padding: 0 2%;
+  width: 100%;
+  max-width: 800px;
+}
+
+.actived {
+  display: block !important;
+}
+.actived::after {
+  display: table;
+  content: "";
+  width: 200px;
+  height: 5px;
+  background-color: #3ab0ff;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+  line-height: 1.5;
+  transition: all ease-in 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  color: #444444;
+}
+
+h2 {
+  font-family: "lilita One", sans-serif;
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: #787878;
+  padding: 0;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  list-style: none;
+  transition: all ease-in 0.3s;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input {
+  font-family: "Roboto";
+  outline: none;
+  border: 0;
+  transition: all ease-in-out 0.2s;
+}
+
+.top {
+  margin: 5rem 0;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+.title {
+  margin-bottom: 3.6rem;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #424242;
+}
+.title span {
+  color: #01038a;
 }
 
 .header {
@@ -1538,6 +1693,8 @@ section.financiamento .container .contactArea .form .form-submit [type=submit] {
 
 section.navBar {
   position: fixed;
+  z-index: 1000;
+  background-color: #ffffff;
   top: 0;
   right: 0;
   left: 0;
@@ -1591,20 +1748,132 @@ section.navBar .form form {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: blue;
 }
 section.navBar .form form button {
   padding: 1rem;
-  border: 1px solid #383bff;
 }
 section.navBar .bell {
   flex: 1 0 0;
   text-align: right;
 }
 
+section.content {
+  margin: 7rem 25rem 0 25rem;
+  padding: 2rem;
+}
+section.content .main-content .stage-1 {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 2fr auto 2fr;
+  justify-content: space-between;
+  row-gap: 2rem;
+  grid-template-areas: "one one two" "one one three";
+}
+section.content .main-content .control-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.8rem;
+  height: 12rem;
+  width: 100%;
+  max-width: 60.5rem;
+  box-shadow: 0;
+}
+section.content .main-content .control-data .financ {
+  grid-area: one;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+section.content .main-content .control-data .financ .name-section {
+  background: #ffe600;
+  border-radius: 10px 10px 0px 0px;
+}
+section.content .main-content .control-data .financ .name-section h3 {
+  padding: 0.9rem;
+}
+section.content .main-content .control-data .financ table {
+  width: 100%;
+}
+section.content .main-content .control-data .financ table thead,
+section.content .main-content .control-data .financ table tbody {
+  text-align: center;
+}
+section.content .main-content .total-financ {
+  grid-area: two;
+  width: 100%;
+  max-width: 70rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto auto;
+  gap: 1rem;
+}
+section.content .main-content .total-financ .box {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  background: linear-gradient(90.1deg, #8d8fff 0.08%, #383bff 99.91%);
+  opacity: 0.9;
+  background-color: #ffffff;
+  height: 5.5rem;
+  padding: 1rem 0.8rem;
+}
+section.content .main-content .total-financ .box .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 2rem;
+  height: 40px;
+  width: 40px;
+  background-color: #383bff;
+  border-radius: 100%;
+}
+section.content .main-content .relacionados {
+  margin-top: 1.5rem;
+  max-width: 70rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1.6rem;
+  grid-area: three;
+  padding: 0;
+  align-self: flex-end;
+}
+section.content .main-content .relacionados .zero .zero-main {
+  padding: 0.5rem;
+  max-width: 20rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+section.content .main-content .relacionados .zero .zero-main .one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.grafico-listaUser {
+  margin-top: 3rem;
+  background-color: #383bff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.grafico-listaUser .graphic {
+  background-color: 255;
+  max-width: 60rem;
+  width: 100%;
+}
+.grafico-listaUser .listaUser {
+  background-color: rgb(225, 0, 255);
+}
+
 section#sideBar {
   width: 100%;
-  max-width: 250px;
+  max-width: 25rem;
   height: 100%;
   position: fixed;
   top: 0;
@@ -1615,12 +1884,12 @@ section#sideBar {
 section.side-post {
   border-left: 1px solid #ccc;
   width: 100%;
-  max-width: 250px;
+  max-width: 25rem;
   height: 100%;
   position: fixed;
   top: 0;
   right: 0;
-  margin-top: 70px;
+  margin-top: 7rem;
 }
 
 section.login-acesso {
@@ -1794,170 +2063,6 @@ section.login-acesso .min-container .login-area .login-acess .form .account a:ho
     max-width: 300px;
     height: 300px;
   }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow: visible;
-}
-
-.hight {
-  min-height: 70vh;
-}
-
-html,
-body {
-  height: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.6rem;
-  line-height: 150%;
-  letter-spacing: -1;
-  background-color: #fff;
-  font-family: "Montserrat", sans-serif !important;
-}
-
-.bg-tab {
-  color: #ffffff;
-}
-
-.active a {
-  color: #3ab0ff;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.padding {
-  padding: 70px 0;
-}
-
-.padding-20 {
-  padding: 20px 0;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 2%;
-  max-width: 1440px;
-}
-
-.container-2 {
-  width: 100%;
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px 2rem 15px;
-}
-
-.min-container {
-  margin: 0 auto;
-  padding: 0 2%;
-  max-width: 600px;
-}
-
-.container-800 {
-  margin: 0 auto;
-  padding: 0 2%;
-  width: 100%;
-  max-width: 800px;
-}
-
-.actived {
-  display: block !important;
-}
-.actived::after {
-  display: table;
-  content: "";
-  width: 200px;
-  height: 5px;
-  background-color: #3ab0ff;
-}
-
-a {
-  text-decoration: none;
-  color: #ccc;
-  line-height: 1.5;
-  transition: all ease-in 0.2s;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  font-size: 2rem;
-  color: #444444;
-}
-
-h2 {
-  font-family: "lilita One", sans-serif;
-  font-weight: normal;
-}
-
-p {
-  line-height: 1.5;
-  font-size: 1.6rem;
-  color: #787878;
-  padding: 0;
-  margin: 0 auto;
-}
-
-ul,
-li {
-  list-style: none;
-  transition: all ease-in 0.3s;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-input {
-  font-family: "Roboto";
-  outline: none;
-  border: 0;
-  transition: all ease-in-out 0.2s;
-}
-
-.top {
-  margin: 5rem 0;
-}
-
-button {
-  cursor: pointer;
-  border: 1px solid transparent;
-  text-transform: uppercase;
-  transition: all 0.2s;
-  display: inline-block;
-  font-size: 1.8rem;
-}
-
-.title {
-  margin-bottom: 3.6rem;
-  font-size: 3rem;
-  font-weight: 400;
-  color: #424242;
-}
-.title span {
-  color: #01038a;
 }
 
 /*# sourceMappingURL=globals.css.map */

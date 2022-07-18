@@ -18,6 +18,12 @@ export default function Admin() {
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
       ></Script>
+      <Script
+        type="text/javascript"
+        src="https://www.gstatic.com/charts/loader.js"
+      ></Script>
+
+      <Script src="/scripts/grafico-admin.js"></Script>
 
       {/* <div className="grid"> */}
       <section className="navBar">
@@ -160,30 +166,262 @@ export default function Admin() {
         </nav>
       </section>
 
-      {/* <div className="main-content">
-          <div className="primeiro-1">
-            <div className="left">sssss</div>
-            <div className="right">aaaaaa</div>
+      <section className="content">
+        <div className="main-content">
+          <div className="stage-1">
+            <div className="control-data">
+              <div className="financ">
+                <div className="name-section">
+                  <h3>Empresa</h3>
+                </div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Quant</th>
+                      <th>desvalorizadas</th>
+                      <th>recente</th>
+                      <th>valorizada</th>
+                      <th>top</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>45</td>
+                      <td>20</td>
+                      <td>14</td>
+                      <td>6</td>
+                      <td>9</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* area do financiamento */}
+              <div className="financ">
+                <div className="name-section">
+                  <h3>Financiamento</h3>
+                </div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Quant</th>
+                      <th>desvalorizadas</th>
+                      <th>recente</th>
+                      <th>valorizada</th>
+                      <th>top</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>45</td>
+                      <td>20</td>
+                      <td>14</td>
+                      <td>6</td>
+                      <td>9</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* area do investimento */}
+              <div className="financ">
+                <div className="name-section">
+                  <h3>Investimentos</h3>
+                </div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Quant</th>
+                      <th>desvalorizadas</th>
+                      <th>recente</th>
+                      <th>valorizada</th>
+                      <th>top</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>45</td>
+                      <td>20</td>
+                      <td>14</td>
+                      <td>6</td>
+                      <td>9</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* financasssss */}
+            <div className="total-financ">
+              <div className="box box-1 color">
+                <div className="entry">
+                  <h1>entrada</h1>
+                  <span>valor depositado</span>
+                </div>
+                <div className="icon">
+                  <i className="bx bx-dollar"></i>
+                </div>
+                <span>1.000.000.00</span>
+              </div>
+
+              <div className="box box-1 color">
+                <div className="entry">
+                  <h1>entrada</h1>
+                  <span>valor depositado</span>
+                </div>
+                <div className="icon">
+                  <i className="bx bx-dollar"></i>
+                </div>
+                <span>1.000.000.00</span>
+              </div>
+              <div className="box box-1 color">
+                <div className="entry">
+                  <h1>entrada</h1>
+                  <span>valor depositado</span>
+                </div>
+                <div className="icon">
+                  <i className="bx bx-dollar"></i>
+                </div>
+                <span>1.000.000.00</span>
+              </div>
+              <div className="box box-1 color">
+                <div className="entry">
+                  <h1>entrada</h1>
+                  <span>valor depositado</span>
+                </div>
+                <div className="icon">
+                  <i className="bx bx-dollar"></i>
+                </div>
+                <span>1.000.000.00</span>
+              </div>
+            </div>
+
+            {/* relacao */}
+            <div className="relacionados">
+              {/* kjdsfsfsdfsd */}
+              <div className="zero">
+                <div className="zero-main">
+                  <div className="one">
+                    <i className="bx bx-user"></i>
+                    <span>Clientes</span>
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </div>
+                  <div className="two">
+                    <span>66</span>
+                  </div>
+                </div>
+              </div>
+              <div className="zero">
+                <div className="zero-main">
+                  <div className="one">
+                    <i className="bx bx-user"></i>
+                    <span>Clientes</span>
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </div>
+                  <div className="two">
+                    <span>66</span>
+                  </div>
+                </div>
+              </div>
+              <div className="zero">
+                <div className="zero-main">
+                  <div className="one">
+                    <i className="bx bx-user"></i>
+                    <span>Clientes</span>
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </div>
+                  <div className="two">
+                    <span>66</span>
+                  </div>
+                </div>
+              </div>
+              <div className="zero">
+                <div className="zero-main">
+                  <div className="one">
+                    <i className="bx bx-user"></i>
+                    <span>Clientes</span>
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </div>
+                  <div className="two">
+                    <span>66</span>
+                  </div>
+                </div>
+              </div>
+              <div className="zero">
+                <div className="zero-main">
+                  <div className="one">
+                    <i className="bx bx-user"></i>
+                    <span>Clientes</span>
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </div>
+                  <div className="two">
+                    <span>66</span>
+                  </div>
+                </div>
+              </div>
+              <div className="zero">
+                <div className="zero-main">
+                  <div className="one">
+                    <i className="bx bx-user"></i>
+                    <span>Clientes</span>
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </div>
+                  <div className="two">
+                    <span>66</span>
+                  </div>
+                </div>
+              </div>
+              <div className="zero">
+                <div className="zero-main">
+                  <div className="one">
+                    <i className="bx bx-user"></i>
+                    <span>Clientes</span>
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </div>
+                  <div className="two">
+                    <span>66</span>
+                  </div>
+                </div>
+              </div>
+              <div className="zero">
+                <div className="zero-main">
+                  <div className="one">
+                    <i className="bx bx-user"></i>
+                    <span>Clientes</span>
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </div>
+                  <div className="two">
+                    <span>66</span>
+                  </div>
+                </div>
+              </div>
+              <div className="zero">
+                <div className="zero-main">
+                  <div className="one">
+                    <i className="bx bx-user"></i>
+                    <span>Clientes</span>
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </div>
+                  <div className="two">
+                    <span>66</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div> */}
 
-      {/* <div className="aside-right padding">
-          <div className="direito"></div>
+          <section className="grafico-listaUser">
+            <div id="columnchart_values" className="graphic">
+            </div>
+            <div className="listaUser">
+              <h1>Luanda vida</h1>
+            </div>
+          </section>
         </div>
-      </div> */}
+      </section>
 
-      {/* <nav>
-        <div className="profile">
-          <img src="/image/man-profile.svg" alt="" />
-          <div className="name-types">
-            <span className="name">tomaas sanimbo</span>
-            <span></span>
-          </div>
-        </div>
-      </nav> */}
-
-      <section className="side-post" >
-
+      <section className="side-post">
+        <h1>Luandas</h1>
       </section>
     </>
   );
