@@ -411,10 +411,186 @@ export default function Admin() {
           </div>
 
           <section className="grafico-listaUser">
-            <div id="columnchart_values" className="graphic">
-            </div>
+            <div
+              style={{ "max-width": "630px", height: "100%" }}
+              id="columnchart_values"
+              className="graphic"
+            ></div>
             <div className="listaUser">
               <h1>Luanda vida</h1>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Empresa</th>
+                    <th>Documento</th>
+                    <th>Adicionado</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="name-image">
+                      <img
+                        style={{
+                          "max-width": "40px",
+                          height: "40px",
+                          "border-radius": "50%",
+                        }}
+                        src="/image/ipo.svg"
+                        alt=""
+                      />
+                      <span>lucas limitada</span>
+                    </td>
+                    <td>angola telecom</td>
+                    <td>004857789HO042</td>
+                    <td>23-06-2021</td>
+                    <td>desactivado </td>
+                    <td>23-06-2021</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section className="customers">
+            <div className="containeer">
+              <div className="customer">
+                <div className="head">
+                  <h2>Luanda</h2>
+                  <Link href="#">
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </Link>
+                </div>
+                <div className="boxsd">
+                  <img src="/image/HERO.jpg" alt="" />
+                  <img src="/image/HERO.jpg" alt="" />
+                  <img src="/image/HERO.jpg" alt="" />
+                </div>
+              </div>
+              <div className="customer">
+                <div className="head">
+                  <h2>clientes</h2>
+                  <Link href="#">
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </Link>
+                </div>
+                <div className="boxsd">
+                  <img src="/image/HERO.jpg" alt="" />
+                  <img src="/image/HERO.jpg" alt="" />
+                  <img src="/image/HERO.jpg" alt="" />
+                  <img src="/image/HERO.jpg" alt="" />
+                </div>
+              </div>
+              <div className="customer">
+                <div className="head">
+                  <h2>Usuarios</h2>
+                  <Link href="#">
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </Link>
+                </div>
+                <div className="boxsd">
+                  <img src="/image/HERO.jpg" alt="" />
+                  <img src="/image/HERO.jpg" alt="" />
+                  <img src="/image/HERO.jpg" alt="" />
+                  <img src="/image/HERO.jpg" alt="" />
+                </div>
+              </div>
+              <div className="customer">
+                <div className="head">
+                  <h2>Chat</h2>
+                  <Link href="https//:www.google.com">
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </Link>
+                </div>
+                <div className="boxsd">
+                  <img src="/image/HERO.jpg" alt="" />
+                  <img src="/image/HERO.jpg" alt="" />
+                  <img src="/image/HERO.jpg" alt="" />
+                  <img src="/image/HERO.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="s-merkat">
+            <div className="containeer">
+              <div className="mercados">
+                <h2>Mercado da bolsa</h2>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>company</th>
+                    <th>company</th>
+                    <th>company</th>
+                    <th>company</th>
+                    <th>company</th>
+                    <th>company</th>
+                    <th>company</th>
+                    <th>company</th>
+                    <th>company</th>
+                    <th>company</th>
+                    <th>company</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                  </tr>
+                  <tr>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                  </tr>
+                  <tr>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                  </tr>
+                  <tr>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                    <td>Emainvest</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </section>
         </div>

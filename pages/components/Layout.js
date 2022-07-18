@@ -8,7 +8,9 @@ export default function Layout({ children }) {
   return (
     <>
       {router.pathname != "/admin" && <Navbar />}
+      {router.pathname != "/financ" && <Navbar />}
       <div className="">{children}</div>
+      {router.pathname != "/financ" && <Footer />}
       {router.pathname != "/admin" && <Footer />}
     </>
   );

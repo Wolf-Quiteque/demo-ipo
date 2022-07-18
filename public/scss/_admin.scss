@@ -73,7 +73,9 @@ section.navBar {
 }
 
 section.content {
+  // font-size: 62.5%;
   margin: 7rem 25rem 0 25rem;
+  // width: 100%;
   padding: 2rem;
   // background-color: red;
   .main-content {
@@ -189,20 +191,88 @@ section.content {
   }
 }
 
-.grafico-listaUser {
+section.grafico-listaUser {
   margin-top: 3rem;
-  background-color: #383bff;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  column-gap: 2rem;
 
   .graphic {
     background-color: red($color: #ff1919);
-    max-width: 60rem;
+    // max-width: 60rem;
     width: 100%;
   }
   .listaUser {
-    background-color: rgb(225, 0, 255);
+    width: 100%;
+    max-width: 690px;
+    justify-content: flex-start;
+    // background-color: rgb(225, 0, 255);
+
+    table {
+      width: 100%;
+      text-align: center;
+
+      .name-image {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+      }
+
+      td,
+      th {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
+
+section.customers {
+  padding: 3.5rem 2rem;
+
+  .containeer {
+    @include flex(row, flex-start, space-around);
+
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    .customer {
+      border-radius: 8px 8px 0px 0px;
+      border: 1px solid $corPrimaria;
+      width: 100%;
+      max-width: 25rem;
+      padding: 0.5rem 2rem;
+      .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+          padding: 1rem;
+          background-color: rgba(204, 204, 204, 0.434);
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+      .boxsd {
+        display: flex;
+        margin: 1rem 1rem;
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+}
+
+
+.s-merkat{
+  .containeer{
+    @include tables;
   }
 }
 
