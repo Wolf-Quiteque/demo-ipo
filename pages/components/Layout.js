@@ -5,13 +5,16 @@ import { useRouter } from "next/router";
 
 export default function Layout({ children }) {
   const router = useRouter();
+  console.log(router.pathname);
   return (
     <>
-      {router.pathname != "/admin" && <Navbar />}
-      {router.pathname != "/financ" && <Navbar />}
+      {router.pathname != "/admin" && router.pathname != "/financ" && (
+        <Navbar />
+      )}
       <div className="">{children}</div>
-      {router.pathname != "/financ" && <Footer />}
-      {router.pathname != "/admin" && <Footer />}
+      {router.pathname != "/admin" && router.pathname != "/financ" && (
+        <Footer />
+      )}
     </>
   );
 }
