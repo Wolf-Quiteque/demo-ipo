@@ -31,7 +31,7 @@ export default function Home() {
       <Script src="/scripts/sliders.js"></Script>
 
       <section className="hero">
-        <div className="container hero-flex">
+        <div className="containeer hero-flex">
           <h1>
             {" "}
             Uma maneira incrivel de ver seu negocio crescer é com a{" "}

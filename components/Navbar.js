@@ -22,18 +22,11 @@ export default function Navbar() {
       <Script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></Script>
 
       <header className="header">
-        <div className="container flex nav-flex">
+        <div className="containeer">
           <nav className="navbar flex">
             <div className="logo">
               <Link href="/">
-                <a>
-                  <Image
-                    src="/image/logo-one.png"
-                    alt=""
-                    width={70}
-                    height={50}
-                  />
-                </a>
+                <Image src="/image/logo-one.png" alt="" layout="fill" />
               </Link>
             </div>
             <ul className="menu flex">

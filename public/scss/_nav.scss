@@ -1,0 +1,48 @@
+header.header {
+  box-shadow: 0px 2px 4px rgba($color: #000000, $alpha: 0.9);
+  border-bottom: 2px solid #047aed;
+  background-color: $corWhite;
+  z-index: 1000;
+  position: fixed;
+  height: 7rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  .containeer {
+    @include flex(row, center, space-between);
+
+    nav {
+      @include flex(row, center, space-between);
+      .logo {
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 100px;
+      }
+      ul {
+        &:not(:first-child) {
+          margin-left: 3.2rem;
+        }
+        li {
+          &:not(:last-child) {
+            margin-right: 3.2rem;
+          }
+
+          border-bottom: 1px solid transparent;
+
+          transition: all ease-in 0.2s;
+          &:hover {
+            border-bottom: 1px solid #047aed;
+          }
+          a {
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            color: #333;
+            font-family: "Lilita One", sans-serif;
+          }
+        }
+      }
+    }
+  }
+}

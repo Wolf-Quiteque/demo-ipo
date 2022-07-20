@@ -15,6 +15,8 @@
     @content;
   }
 }
+
+// Container area que centraliza o conteudo do site
 .containeer {
   width: 100%;
   max-width: 124.6rem;
@@ -22,6 +24,9 @@
   padding: 0 1.5rem;
 }
 
+// fim container
+
+// tabela do site
 @mixin tables {
   table {
     width: 100%;

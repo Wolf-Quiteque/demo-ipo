@@ -1,12 +1,14 @@
 section.hero {
+  margin-top: 7rem;
   // margin-top: 1.9rem;
   background: $corFundoLinear, url("/image/HERO.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: calc(96vh - 100px);
-  position: relative;
-  z-index: 1;
+  height: 70vh;
+  width: 100%;
+  // position: relative;
+  // z-index: 1;
 
   .hero-flex {
     display: flex;

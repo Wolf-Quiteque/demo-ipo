@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: visible;
+  overflow-x: hidden;
 }
 
 .hight {
@@ -165,33 +165,53 @@ button {
   color: #01038a;
 }
 
-.header {
-  height: 70px;
-  width: 100%;
-  background-color: #ffffff;
+header.header {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9);
   border-bottom: 2px solid #047aed;
+  background-color: #ffffff;
+  z-index: 1000;
+  position: fixed;
+  height: 7rem;
+  width: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  display: flex;
 }
-.header .nav-flex {
+header.header .containeer {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
-.header .navbar .logo {
-  margin-right: 30px;
+header.header .containeer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
-.header .navbar .menu li {
-  margin-right: 10px;
+header.header .containeer nav .logo {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100px;
+}
+header.header .containeer nav ul:not(:first-child) {
+  margin-left: 3.2rem;
+}
+header.header .containeer nav ul li {
   border-bottom: 1px solid transparent;
   transition: all ease-in 0.2s;
 }
-.header .navbar .menu li:hover {
+header.header .containeer nav ul li:not(:last-child) {
+  margin-right: 3.2rem;
+}
+header.header .containeer nav ul li:hover {
   border-bottom: 1px solid #047aed;
 }
-.header .navbar .menu li a {
+header.header .containeer nav ul li a {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
   color: #333;
-  padding: 10px 10px;
   font-family: "Lilita One", sans-serif;
 }
 
@@ -329,13 +349,13 @@ button.reset a {
 }
 
 section.hero {
+  margin-top: 7rem;
   background: linear-gradient(94deg, rgba(0, 0, 0, 0.5) 0%, rgba(82, 85, 251, 0.2525385154) 100%), url("/image/HERO.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: calc(96vh - 100px);
-  position: relative;
-  z-index: 1;
+  height: 70vh;
+  width: 100%;
 }
 section.hero .hero-flex {
   display: flex;
