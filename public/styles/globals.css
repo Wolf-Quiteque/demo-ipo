@@ -681,20 +681,24 @@ section.processo .container .proce-image .image {
   height: 400px;
 }
 
-section.parceiros h1.title {
-  text-align: center;
-  font-size: 4rem;
-  color: #242424;
-  font-family: "lilita One", sans-serif;
+section.s-parceiros .container {
+  background-color: blue;
+  max-width: 1000px;
+  height: 200px;
 }
-section.parceiros .container {
-  display: grid;
-  grid-template-columns: repeat(6, 200px);
-  column-gap: 12px;
+section.s-parceiros .container .centro {
+  width: 100%;
+  max-width: 1000px;
+  background-color: red;
+  display: flex;
 }
-section.parceiros .container .parce-slader {
-  background-color: #ccc;
+section.s-parceiros .container .centro .parce-slader img {
+  display: block;
+  width: 40%;
+  margin: auto;
+  height: 50px;
 }
+
 section.testemunho .title {
   text-align: center;
   color: #242424;
@@ -887,6 +891,10 @@ section.s-lista-empresa .compania .company {
 }
 section.s-lista-empresa .compania .company:last-child {
   margin-bottom: 220px;
+}
+section.s-lista-empresa .compania .company img {
+  width: 100%;
+  height: 250px;
 }
 section.s-lista-empresa .compania .company .favorite {
   display: none;

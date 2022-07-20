@@ -334,26 +334,49 @@ export default function Home() {
       </section>
 
       {/* Area dos parceiros  */}
-      <section className="parceiros padding">
+      <section className="s-parceiros ">
         <h1 className="title">Nossos Parceiros</h1>
-        <div className="container-2 ">
-          <div className="parce-slader">
-            <img src="/image/opt.svg" alt="" />
-          </div>
-          <div className="parce-slader">
-            <img src="/image/opt.svg" alt="" />
-          </div>
-          <div className="parce-slader">
-            <img src="/image/opt.svg" alt="" />
-          </div>
-          <div className="parce-slader">
-            <img src="/image/opt.svg" alt="" />
-          </div>
-          <div className="parce-slader">
-            <img src="/image/opt.svg" alt="" />
-          </div>
-          <div className="parce-slader">
-            <img src="/image/opt.svg" alt="" />
+        <div className="container ">
+          <div className="centro">
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
+            <div className="parce-slader">
+              <img src="/image/opt.svg" alt="" />
+            </div>
           </div>
         </div>
       </section>

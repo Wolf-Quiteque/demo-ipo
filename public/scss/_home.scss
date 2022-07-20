@@ -441,25 +441,49 @@ section.processo {
 
 // Area de+ Nossos parceiros
 
-section.parceiros {
-  // background-color: #d9d9d9;
-  h1.title {
-    text-align: center;
-    font-size: 4rem;
-    color: $corTexto;
-    font-family: "lilita One", sans-serif;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: repeat(6, 200px);
-    column-gap: 12px;
-    .parce-slader {
-      background-color: #ccc;
-    }
-    .parce-slader {
-    }
+// section.parceiros {
+//   // background-color: #d9d9d9;
+//   h1.title {
+//     text-align: center;
+//     font-size: 4rem;
+//     color: $corTexto;
+//     font-family: "lilita One", sans-serif;
+//   }
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(6, 200px);
+//     column-gap: 12px;
+//     .parce-slader {
+//       background-color: #ccc;
+//     }
+//     .parce-slader {
+//     }
 
-    .parce-slader:first-child {
+//     .parce-slader:first-child {
+//     }
+//   }
+// }
+
+section.s-parceiros {
+  .container {
+    background-color: blue;
+    max-width: 1000px;
+    height: 200px;
+    // align-items: flex-start;
+    // overflow: hidden;
+    .centro {
+      width: 100%;
+      max-width: 1000px;
+      background-color: red;
+      display: flex;
+      .parce-slader {
+        img {
+          display: block;
+          width: 40%;
+          margin: auto;
+          height: 50px;
+        }
+      }
     }
   }
 }
@@ -472,10 +496,8 @@ section.testemunho {
     color: $corTexto;
     text-transform: uppercase;
   }
-  // background-color: $corDark;
   .min-container {
     max-width: 760px;
-    // background-color: #ff8181f0;
     border-radius: 15px;
     margin: 10px auto;
     padding: 30px 30px;

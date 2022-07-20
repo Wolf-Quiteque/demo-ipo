@@ -127,7 +127,10 @@ section.s-lista-empresa {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
+      img {
+        width: 100%;
+        height: 250px;
+      }
       .favorite {
         display: none;
         position: absolute;
@@ -160,7 +163,7 @@ section.s-lista-empresa {
     padding: 12px;
     color: $corWhite;
     font-weight: 600;
-    &:hover{
+    &:hover {
       background-color: $secondary;
     }
   }
