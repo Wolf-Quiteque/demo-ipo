@@ -16,8 +16,16 @@
   }
 }
 
+button {
+  cursor: pointer;
+  // border: 1px solid transparent;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  font-size: 1.4rem;
+}
+
 // Container area que centraliza o conteudo do site
-.containeer {
+.container {
   width: 100%;
   max-width: 124.6rem;
   margin: 0 auto;

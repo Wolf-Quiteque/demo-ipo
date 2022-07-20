@@ -9,7 +9,7 @@ header.header {
   top: 0;
   left: 0;
   display: flex;
-  .containeer {
+  .container {
     @include flex(row, center, space-between);
 
     nav {

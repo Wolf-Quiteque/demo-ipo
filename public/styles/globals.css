@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@400;500;600;700;900&display=swap");
-.containeer {
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  font-size: 1.4rem;
+}
+
+.container {
   width: 100%;
   max-width: 124.6rem;
   margin: 0 auto;
@@ -11,6 +18,10 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: 0;
 }
 
 .hight {
@@ -50,19 +61,6 @@ body {
 
 .padding-20 {
   padding: 20px 0;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 2%;
-  max-width: 1440px;
-}
-
-.container-2 {
-  width: 100%;
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px 2rem 15px;
 }
 
 .min-container {
@@ -146,15 +144,6 @@ input {
   margin: 5rem 0;
 }
 
-button {
-  cursor: pointer;
-  border: 1px solid transparent;
-  text-transform: uppercase;
-  transition: all 0.2s;
-  display: inline-block;
-  font-size: 1.8rem;
-}
-
 .title {
   margin-bottom: 3.6rem;
   font-size: 3rem;
@@ -177,38 +166,38 @@ header.header {
   left: 0;
   display: flex;
 }
-header.header .containeer {
+header.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-header.header .containeer nav {
+header.header .container nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-header.header .containeer nav .logo {
+header.header .container nav .logo {
   display: block;
   position: relative;
   height: 100%;
   width: 100px;
 }
-header.header .containeer nav ul:not(:first-child) {
+header.header .container nav ul:not(:first-child) {
   margin-left: 3.2rem;
 }
-header.header .containeer nav ul li {
+header.header .container nav ul li {
   border-bottom: 1px solid transparent;
   transition: all ease-in 0.2s;
 }
-header.header .containeer nav ul li:not(:last-child) {
+header.header .container nav ul li:not(:last-child) {
   margin-right: 3.2rem;
 }
-header.header .containeer nav ul li:hover {
+header.header .container nav ul li:hover {
   border-bottom: 1px solid #047aed;
 }
-header.header .containeer nav ul li a {
+header.header .container nav ul li a {
   display: inline-block;
   padding: 0.6rem 1.5rem;
   color: #333;
@@ -359,8 +348,9 @@ section.hero {
 }
 section.hero .hero-flex {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
   align-content: center;
   height: 100%;
 }
@@ -395,31 +385,31 @@ section.barra .info-barra {
   color: #ffffff;
 }
 
-section.dicas {
+section.s-dicas {
   padding: 70px 0;
   background-color: #15133c;
 }
-section.dicas h1.title-dicas {
+section.s-dicas h1.title-dicas {
   margin-bottom: 3.6rem;
   margin-left: 20rem;
   font-size: 3rem;
   font-weight: 300;
   color: #ffffff;
 }
-section.dicas h1.title-dicas span {
+section.s-dicas h1.title-dicas span {
   color: #3ab0ff;
 }
-section.dicas .info-dicas h3.title3 {
+section.s-dicas .info-dicas h3.title3 {
   color: #ffffff;
 }
-section.dicas .info-dicas p {
+section.s-dicas .info-dicas p {
   color: #ffffff;
 }
-section.dicas .imagens img {
+section.s-dicas .imagens img {
   display: block;
   max-width: 100%;
 }
-section.dicas .grid {
+section.s-dicas .grid {
   position: relative;
   display: grid;
   justify-content: center;
@@ -429,7 +419,7 @@ section.dicas .grid {
   gap: 30px;
   height: 100%;
 }
-section.dicas .box-grid {
+section.s-dicas .box-grid {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -437,7 +427,7 @@ section.dicas .box-grid {
   gap: 10px;
   height: 100%;
 }
-section.dicas .box-dicas .info-dicas {
+section.s-dicas .box-dicas .info-dicas {
   width: 80%;
 }
 
@@ -445,7 +435,7 @@ section.dicas .box-dicas .info-dicas {
   margin-top: 100px;
 }
 
-section.ipo .container-2 {
+section.ipo .container {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: 100px auto auto;
@@ -454,19 +444,19 @@ section.ipo .container-2 {
   column-gap: 3rem;
   grid-template-areas: "one one one" "two two three" "two two three";
 }
-section.ipo .container-2 .title {
+section.ipo .container .title {
   grid-area: one;
 }
-section.ipo .container-2 .caixa-1 {
+section.ipo .container .caixa-1 {
   grid-area: two;
   width: 100%;
   max-width: 700px;
 }
-section.ipo .container-2 .caixa-1 .link li {
+section.ipo .container .caixa-1 .link li {
   width: 100%;
   max-width: 200px;
 }
-section.ipo .container-2 .caixa-1 .link li a {
+section.ipo .container .caixa-1 .link li a {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -477,36 +467,39 @@ section.ipo .container-2 .caixa-1 .link li a {
   border-bottom: 1px solid #3ab0ff;
   border-width: 1px;
 }
-section.ipo .container-2 .caixa-1 .link li a:hover {
+section.ipo .container .caixa-1 .link li a:hover {
   background-color: rgba(183, 183, 183, 0.245);
 }
-section.ipo .container-2 .caixa-1 .header-fin {
+section.ipo .container .caixa-1 .showTab {
+  display: none;
+}
+section.ipo .container .caixa-1 .header-fin {
   display: flex;
   column-gap: 2rem;
   justify-content: space-between;
 }
-section.ipo .container-2 .caixa-1 .header-fin-tab {
+section.ipo .container .caixa-1 .header-fin-tab {
   border-right: 2px solid #1363df;
   padding: 2rem;
   margin-bottom: 2rem;
 }
-section.ipo .container-2 .caixa-2 {
+section.ipo .container .caixa-2 {
   width: 100%;
   grid-area: three;
   justify-self: flex-end;
 }
-section.ipo .container-2 .caixa-2 h2 {
+section.ipo .container .caixa-2 h2 {
   text-align: center;
   align-self: center;
   font-size: 5rem;
 }
-section.ipo .container-2 .caixa-2 .form {
+section.ipo .container .caixa-2 .form {
   margin-top: 1.9rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-section.ipo .container-2 .caixa-2 .form form {
+section.ipo .container .caixa-2 .form form {
   width: 100%;
   display: flex;
 }
@@ -694,12 +687,12 @@ section.parceiros h1.title {
   color: #242424;
   font-family: "lilita One", sans-serif;
 }
-section.parceiros .container-2 {
+section.parceiros .container {
   display: grid;
   grid-template-columns: repeat(6, 200px);
   column-gap: 12px;
 }
-section.parceiros .container-2 .parce-slader {
+section.parceiros .container .parce-slader {
   background-color: #ccc;
 }
 section.testemunho .title {

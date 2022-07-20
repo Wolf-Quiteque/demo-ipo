@@ -31,7 +31,7 @@ export default function Home() {
       <Script src="/scripts/sliders.js"></Script>
 
       <section className="hero">
-        <div className="containeer hero-flex">
+        <div className="container hero-flex">
           <h1>
             {" "}
             Uma maneira incrivel de ver seu negocio crescer é com a{" "}
@@ -55,14 +55,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="dicas">
-        <h1 className="title-dicas">
-          Porque o{" "}
-          <strong>
-            EMAINVEST<span> IPO</span>{" "}
-          </strong>{" "}
-          ?
-        </h1>
+      <section className="s-dicas">
+        <div className="container">
+          <h1 className="title-dicas">
+            Porque o{" "}
+            <strong>
+              EMAINVEST<span> IPO</span>{" "}
+            </strong>{" "}
+            ?
+          </h1>
+        </div>
         <div className="container grid">
           <div className="imgam">
             <Image
@@ -108,7 +110,7 @@ export default function Home() {
       </section>
 
       <section className="ipo padding">
-        <div className="container-2 box-flex">
+        <div className="container box-flex">
           <h2 className="title">
             Com o{" "}
             <strong>
@@ -123,7 +125,7 @@ export default function Home() {
               <button className="btn-main">Investimento</button>
               <button className="btn-main">Financiamento</button>
             </div>
-            <div className="header-fin-tab">
+            <div className="header-fin-tab showTab actived">
               <h2>Investimento</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -138,7 +140,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="header-fin-tab">
+            <div className="header-fin-tab showTab">
               <h2>Financiamento</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -214,14 +216,14 @@ export default function Home() {
       <section className="investir padding">
         <div className="container">
           <h1 className="title">Voce pode obter um financiamento</h1>
-          <div className="tab__button button">
-            <button className="tab__button is__active">
+          <div className=" tab__button button">
+            <button className="js-tab__button  tab__button is__active">
               Obter Fincanciamento
             </button>
-            <button className="tab__button ">Investir</button>
+            <button className="js-tab__button tab__button ">Investir</button>
           </div>
           {/* financiamneto  */}
-          <div className="tab__content financiamento is__active">
+          <div className="js-tab__content tab__content financiamento is__active">
             <div className="texto">
               <h1>Receba um financiamento</h1>
               <p>aqui voce encontra o jeito certo de dar vida ao seu negocio</p>
@@ -250,7 +252,7 @@ export default function Home() {
 
           {/* Investimento */}
 
-          <div className="tab__content financiamento">
+          <div className="js-tab__content tab__content financiamento">
             <div className="texto">
               <h1>Comeca a investir</h1>
               <p>

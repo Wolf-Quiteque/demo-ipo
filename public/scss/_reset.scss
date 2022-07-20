@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: 0;
 }
 .hight {
   min-height: 70vh;
@@ -40,18 +44,9 @@ body {
 .padding-20 {
   padding: 20px 0;
 }
-.container {
-  margin: 0 auto;
-  padding: 0 2%;
-  max-width: 1440px;
-}
 
-.container-2 {
-  width: 100%;
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px 2rem 15px;
-}
+
+
 .min-container {
   margin: 0 auto;
   padding: 0 2%;
@@ -130,14 +125,6 @@ input {
 
 .top {
   margin: 5rem 0;
-}
-button {
-  cursor: pointer;
-  border: 1px solid transparent;
-  text-transform: uppercase;
-  transition: all 0.2s;
-  display: inline-block;
-  font-size: 1.8rem;
 }
 
 // configuracao global para o heading

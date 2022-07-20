@@ -1,19 +1,15 @@
 section.hero {
   margin-top: 7rem;
-  // margin-top: 1.9rem;
   background: $corFundoLinear, url("/image/HERO.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 70vh;
   width: 100%;
-  // position: relative;
-  // z-index: 1;
 
   .hero-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column, flex-start, center);
+
     align-content: center;
     height: 100%;
   }
@@ -51,7 +47,7 @@ section.barra {
   }
 }
 
-section.dicas {
+section.s-dicas {
   padding: 70px 0;
   background-color: $corBackground-1;
 
@@ -143,7 +139,7 @@ section.dicas {
 // }
 
 section.ipo {
-  .container-2 {
+  .container {
     // background-color: red;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -187,6 +183,9 @@ section.ipo {
             }
           }
         }
+      }
+      .showTab {
+        display: none;
       }
       .header-fin {
         display: flex;
@@ -450,7 +449,7 @@ section.parceiros {
     color: $corTexto;
     font-family: "lilita One", sans-serif;
   }
-  .container-2 {
+  .container {
     display: grid;
     grid-template-columns: repeat(6, 200px);
     column-gap: 12px;
