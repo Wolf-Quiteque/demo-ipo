@@ -181,8 +181,9 @@ section.s-login-acesso {
           font-weight: 600;
           text-transform: uppercase;
           font-family: "Inter", sans-serif;
-          &:hover{
-            transform : scaleX(0.9)
+          &:hover {
+            // transform : scaleX(0.9);
+            background: $corSecondary;
           }
         }
       }

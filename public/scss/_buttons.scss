@@ -93,11 +93,12 @@ button.reset {
 
 .btn-main {
   padding: 10px 36px;
-  background-color: $corSecondary;
+  // background-color: $corSecondary;
+  @include gradiente;
   color: $corWhite;
   font-weight: 400;
   &:hover {
-    background-color: $corPrimaria;
+    background: $corSecondary;
   }
   &:last-child {
     background: none;

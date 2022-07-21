@@ -294,12 +294,12 @@ button.reset a {
 
 .btn-main {
   padding: 10px 36px;
-  background-color: #1363df;
+  background: radial-gradient(circle, rgb(58, 176, 255) 0%, rgba(19, 99, 223, 0.868785014) 100%);
   color: #ffffff;
   font-weight: 400;
 }
 .btn-main:hover {
-  background-color: #3ab0ff;
+  background: #1363df;
 }
 .btn-main:last-child {
   background: none;
@@ -2160,7 +2160,7 @@ section.s-login-acesso .container .login-acess .form input[type=submit] {
   font-family: "Inter", sans-serif;
 }
 section.s-login-acesso .container .login-acess .form input[type=submit]:hover {
-  transform: scaleX(0.9);
+  background: #1363df;
 }
 
 .red {
