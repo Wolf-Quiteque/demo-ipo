@@ -5,7 +5,7 @@ export default function Register(){
   return (
     <>
      <section className="login-acesso padding">
-          <div className="min-container ">
+          <div className="container ">
             <div className="login-area">
               <div className="text-left">
                   <h1>Obrigado por nos escolher</h1>

@@ -6,7 +6,9 @@
   text-decoration: none;
   list-style: none;
   outline: none;
+  transition: all ease-in-out 0.2s;
   border: 0;
+  font-family: "Montserrat", sans-serif;
 }
 .hight {
   min-height: 70vh;
@@ -44,8 +46,6 @@ body {
 .padding-20 {
   padding: 20px 0;
 }
-
-
 
 .min-container {
   margin: 0 auto;
@@ -113,7 +113,7 @@ img {
 }
 
 input {
-  font-family: "Roboto";
+  font-family: "Montserrat";
   outline: none;
   border: 0;
   transition: all ease-in-out 0.2s;

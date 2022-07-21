@@ -2,8 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
+import { useState } from "react";
 
 export default function Home() {
+  const [setAno, stateAno] = useState("");
+
   return (
     <>
       <Head>
@@ -162,11 +165,13 @@ export default function Home() {
               <h2>simulador de ganhos</h2>
               <span> Taxa a ser aplicada e 2% por mes!</span>
               <form action="">
+              
                 <input
-                  className="input-text"
-                  type="text"
-                  placeholder="digite o valor a investir..."
+                className="input-text"
+                  value={setAno}
+                  onChange={(e) => stateAno((e.target.value))}
                 />
+              
                 <button className="btn-input">simular</button>
               </form>
 
@@ -183,11 +188,11 @@ export default function Home() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td>1.000.000</td>
-                      <td>2%</td>
-                      <td>24</td>
-                      <td>2.0214.263</td>
-                      <td>3.425.231</td>
+                      <td>{setAno}1.000.000</td>
+                      <td>{setAno}2%</td>
+                      <td>{setAno}24</td>
+                      <td>{setAno}2.0214.263</td>
+                      <td>{setAno}3.425.231</td>
                     </tr>
                   </tbody>
                 </table>
