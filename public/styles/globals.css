@@ -319,11 +319,11 @@ button.reset a {
 
 .input-text {
   width: 100%;
-  height: 45px;
-  padding: 15px;
+  height: 4.5rem;
+  padding: 1.5rem;
   font-size: 2rem;
   color: #787878;
-  max-width: 450px;
+  max-width: 45rem;
   border: 1px solid #ccc;
 }
 
@@ -499,9 +499,65 @@ section.ipo .container .caixa-2 .form {
   flex-direction: column;
   align-items: flex-end;
 }
+section.ipo .container .caixa-2 .form span {
+  display: inline-block;
+  background-color: rgb(255, 87, 87);
+  align-self: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
 section.ipo .container .caixa-2 .form form {
   width: 100%;
   display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+section.ipo .container .caixa-2 .form form button {
+  height: 4.5rem;
+  display: inline-block;
+}
+section.ipo .container .caixa-2 .form .showResult {
+  width: 100%;
+}
+section.ipo .container .caixa-2 .form .showResult table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+section.ipo .container .caixa-2 .form .showResult table thead tr th {
+  border-bottom: 1px solid #ccc;
+}
+section.ipo .container .caixa-2 .form .showResult table tbody tr td {
+  border-bottom: 1px solid #ccc;
+}
+section.ipo .container .caixa-2 .form .showResult table {
+  display: flex;
+}
+section.ipo .container .caixa-2 .form .showResult table thead {
+  width: 40%;
+}
+section.ipo .container .caixa-2 .form .showResult table thead tr {
+  display: flex;
+  flex-direction: column;
+}
+section.ipo .container .caixa-2 .form .showResult table thead tr th:nth-child(even) {
+  background-color: rgb(136, 180, 255);
+}
+section.ipo .container .caixa-2 .form .showResult table tbody {
+  width: 60%;
+}
+section.ipo .container .caixa-2 .form .showResult table tbody tr {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+section.ipo .container .caixa-2 .form .showResult table tbody tr td {
+  width: 100%;
+}
+section.ipo .container .caixa-2 .form .showResult table tbody tr td:nth-child(even) {
+  background-color: rgb(136, 180, 255);
 }
 
 section.aplicar {
@@ -681,22 +737,70 @@ section.processo .container .proce-image .image {
   height: 400px;
 }
 
-section.s-parceiros .container {
-  background-color: blue;
-  max-width: 1000px;
-  height: 200px;
+section.s-parceiros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.s-parceiros .title {
+  margin-top: 2rem;
 }
 section.s-parceiros .container .centro {
-  width: 100%;
-  max-width: 1000px;
-  background-color: red;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+section.s-parceiros .container .centro .parce-slader {
+  padding: 0;
+  opacity: 0.4;
+  display: inline;
+  float: left;
+  border: 8px solid #3ab0ff;
+  margin: 6px;
+  width: 100%;
+  max-width: 250px;
+  height: 150px;
+  transition: all 0.2s ease-in-out;
+}
+section.s-parceiros .container .centro .parce-slader:hover,
+section.s-parceiros .container .centro .parce-slader + img,
+section.s-parceiros .container .centro .parce-slader .texto {
+  opacity: 1;
+  object-fit: cover;
+  transform: scale(1.1);
 }
 section.s-parceiros .container .centro .parce-slader img {
   display: block;
-  width: 40%;
-  margin: auto;
-  height: 50px;
+  margin: 0 auto;
+}
+section.s-parceiros .container .centro .parce-slader .texto {
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  margin: 2rem auto;
+  background-color: #eb1d36;
+  transition: all 0.2s ease-in-out;
+}
+section.s-parceiros .container .centro .parce-slader .texto h2,
+section.s-parceiros .container .centro .parce-slader .texto h3,
+section.s-parceiros .container .centro .parce-slader .texto span {
+  animation: texto 0.5s forwards;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+@keyframes texto {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX();
+    opacity: 1;
+  }
 }
 
 section.testemunho .title {
@@ -1959,17 +2063,12 @@ section.customers .containeer .customer .boxsd img {
   width: 100%;
   text-align: center;
   border-collapse: collapse;
-  border: 1px solid #ccc;
-}
-.s-merkat .containeer table thead {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 0px;
 }
 .s-merkat .containeer table thead tr th {
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .s-merkat .containeer table tbody tr td {
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 section#sideBar {

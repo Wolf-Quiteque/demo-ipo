@@ -40,14 +40,14 @@ button {
     width: 100%;
     text-align: center;
     border-collapse: collapse;
-    border: 1px solid #ccc;
+    // border: 1px solid #ccc;
 
     thead {
-      @include shadow(0px);
+      // @include shadow(0px);
 
       tr {
         th {
-          border: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
         }
       }
     }
@@ -55,7 +55,7 @@ button {
     tbody {
       tr {
         td {
-          border: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
         }
       }
     }
