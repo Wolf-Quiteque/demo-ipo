@@ -222,7 +222,7 @@ section.ipo {
           align-self: center;
           margin-bottom: 1rem;
           font-weight: 600;
-          // padding: 0 0.6rem;
+          padding: 0 0.6rem;
           color: $corWhite;
 
           text-align: center;
@@ -255,7 +255,7 @@ section.ipo {
                 flex-direction: column;
                 th{
                   &:nth-child(even) {
-                    background-color: rgb(136, 180, 255);
+                    background-color: rgba(136, 180, 255, 0.365);
                   }
                 }
               }
@@ -269,7 +269,7 @@ section.ipo {
                 text-align: right;
                 td {
                   &:nth-child(even) {
-                    background-color: rgb(136, 180, 255);
+                    background-color: rgba(255, 136, 154, 0.393);
                   }
                   width: 100%;
                 }
