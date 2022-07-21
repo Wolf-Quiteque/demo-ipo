@@ -1,8 +1,14 @@
 import Script from "next/script";
 import Image from "next/image";
 import Head from "next/head";
+import { signOut } from "next-auth/react";
+import { useRouter } from "next/router";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
+
 export default function Admin() {
+  const { data: session, status } = useSession();
+
   return (
     <>
       <Head>
@@ -32,7 +38,7 @@ export default function Admin() {
             <img className="img-avatar" src="/image/man-profile.svg" alt="" />
           </div>
           <div className="name-types">
-            <span className="name-type">Toma Sanimbo</span>
+            <span className="name-type">{session && session.user.name} </span>
             <span className="admin-type">Admin</span>
           </div>
         </div>
@@ -46,9 +52,8 @@ export default function Admin() {
             </button>
           </form>
         </div>
-
         <div className="bell">
-          <i className="bx bx-bell"></i>
+          <button onClick={signOut}> SAIR</button>
         </div>
       </section>
 
