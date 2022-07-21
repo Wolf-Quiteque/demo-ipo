@@ -160,14 +160,38 @@ export default function Home() {
           <div className="caixa-2">
             <div className="form">
               <h2>simulador de ganhos</h2>
+              <span> Taxa a ser aplicada e 2% por mes!</span>
               <form action="">
                 <input
                   className="input-text"
                   type="text"
-                  placeholder="digite o valor..."
+                  placeholder="digite o valor a investir..."
                 />
                 <button className="btn-input">simular</button>
               </form>
+
+              <div className="showResult">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Montante</th>
+                      <th>taxa</th>
+                      <th>tempo</th>
+                      <th>em 1 ano voce tera</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.000.000</td>
+                      <td>2%</td>
+                      <td>24</td>
+                      <td>2.0214.263</td>
+                      <td>3.425.231</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
 
@@ -339,43 +363,23 @@ export default function Home() {
         <div className="container ">
           <div className="centro">
             <div className="parce-slader">
-              <img src="/image/opt.svg" alt="" />
+              <img src="/image/bna.jpg" alt="" />
             </div>
             <div className="parce-slader">
               <img src="/image/opt.svg" alt="" />
             </div>
             <div className="parce-slader">
-              <img src="/image/opt.svg" alt="" />
+              <img src="/image/BAI.png" alt="" />
             </div>
             <div className="parce-slader">
-              <img src="/image/opt.svg" alt="" />
+              <img src="/image/atantico.png" alt="" />
             </div>
             <div className="parce-slader">
-              <img src="/image/opt.svg" alt="" />
-            </div>
-            <div className="parce-slader">
-              <img src="/image/opt.svg" alt="" />
-            </div>
-            <div className="parce-slader">
-              <img src="/image/opt.svg" alt="" />
-            </div>
-            <div className="parce-slader">
-              <img src="/image/opt.svg" alt="" />
-            </div>
-            <div className="parce-slader">
-              <img src="/image/opt.svg" alt="" />
-            </div>
-            <div className="parce-slader">
-              <img src="/image/opt.svg" alt="" />
-            </div>
-            <div className="parce-slader">
-              <img src="/image/opt.svg" alt="" />
-            </div>
-            <div className="parce-slader">
-              <img src="/image/opt.svg" alt="" />
-            </div>
-            <div className="parce-slader">
-              <img src="/image/opt.svg" alt="" />
+              <img src="/image/euro.jpg" alt="" />
+
+              {/* <div className="texto">
+               
+              </div> */}
             </div>
           </div>
         </div>

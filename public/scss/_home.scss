@@ -210,14 +210,72 @@ section.ipo {
         align-self: center;
         font-size: 5rem;
       }
+
       .form {
         margin-top: 1.9rem;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        span {
+          display: inline-block;
+          background-color: rgb(255, 87, 87);
+          align-self: center;
+          margin-bottom: 1rem;
+          font-weight: 600;
+          padding: 0 0.6rem;
+          color: $corWhite;
+
+          text-align: center;
+        }
         form {
           width: 100%;
           display: flex;
+          justify-content: center;
+          margin-bottom: 2rem;
+
+          button {
+            // padding: 1.5rem 0;
+            height: 4.5rem;
+
+            display: inline-block;
+          }
+        }
+
+        .showResult {
+          // background-color: pink;
+          width: 100%;
+          @include tables;
+          table {
+            display: flex;
+
+            thead {
+              width: 40%;
+              tr {
+                display: flex;
+                flex-direction: column;
+                th{
+                  &:nth-child(even) {
+                    background-color: rgba(136, 180, 255, 0.365);
+                  }
+                }
+              }
+            }
+            tbody {
+              width: 60%;
+              tr {
+                display: flex;
+                flex-direction: column;
+                // align-content: flex-start;
+                text-align: right;
+                td {
+                  &:nth-child(even) {
+                    background-color: rgba(255, 136, 154, 0.393);
+                  }
+                  width: 100%;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -400,7 +458,6 @@ section.empresas {
 // section de gerenciamento
 
 section.processo {
-  // border-bottom: 1px solid $corPrimaria;
   background-color: #f1f1f1;
 
   .container {
@@ -439,49 +496,78 @@ section.processo {
   }
 }
 
-// Area de+ Nossos parceiros
-
-// section.parceiros {
-//   // background-color: #d9d9d9;
-//   h1.title {
-//     text-align: center;
-//     font-size: 4rem;
-//     color: $corTexto;
-//     font-family: "lilita One", sans-serif;
-//   }
-//   .container {
-//     display: grid;
-//     grid-template-columns: repeat(6, 200px);
-//     column-gap: 12px;
-//     .parce-slader {
-//       background-color: #ccc;
-//     }
-//     .parce-slader {
-//     }
-
-//     .parce-slader:first-child {
-//     }
-//   }
-// }
-
 section.s-parceiros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title {
+    margin-top: 2rem;
+  }
   .container {
-    background-color: blue;
-    max-width: 1000px;
-    height: 200px;
+    // background-color: blue;
+    // max-width: 1000px;
+    // height: 200px;
     // align-items: flex-start;
     // overflow: hidden;
     .centro {
-      width: 100%;
-      max-width: 1000px;
-      background-color: red;
       display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 100%;
+      // display: flex;
+      overflow: hidden;
+      // flex-wrap: wrap;
       .parce-slader {
+        padding: 0;
+        opacity: 0.4;
+        display: inline;
+        float: left;
+        border: 8px solid $corPrimaria;
+        margin: 6px;
+        width: 100%;
+        max-width: 250px;
+        height: 150px;
+        transition: all 0.2s ease-in-out;
+        &:hover,
+        + img,
+        .texto {
+          opacity: 1;
+          // width: 40%;
+          object-fit: cover;
+          transform: scale(1.1);
+        }
         img {
           display: block;
-          width: 40%;
-          margin: auto;
-          height: 50px;
+          margin: 0 auto;
+        }
+
+        .texto {
+          position: absolute;
+          inset: 0;
+          text-align: center;
+          margin: 2rem auto;
+          background-color: #eb1d36;
+          transition: all 0.2s ease-in-out;
+          h2,
+          h3,
+          span {
+            animation: texto 0.5s forwards;
+            color: $corWhite;
+            font-size: 1.2rem;
+          }
+        }
+
+        @keyframes texto {
+          from {
+            transform: translateX(-20px);
+            opacity: 0;
+          }
+          to {
+            transform: translateX();
+            opacity: 1;
+          }
         }
       }
     }
