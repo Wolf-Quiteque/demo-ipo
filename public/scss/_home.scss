@@ -13,6 +13,15 @@ section.hero {
     align-content: center;
     height: 100%;
   }
+  .container {
+    .button {
+      button {
+        &:not(:first-child) {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
 
   h1 {
     top: -60px;
@@ -109,34 +118,6 @@ section.s-dicas {
   margin-top: 100px;
 }
 
-// section.ipo {
-//   text-align: center;
-//   h2.title {
-//     margin: 5.6rem auto;
-//     font-size: 3rem;
-//     max-width: 600px;
-//     font-weight: 300;
-//     text-align: center;
-//     span {
-//       color: $corPrimaria;
-//     }
-//   }
-//   h3 {
-//     margin: 1.9rem 0;
-//   }
-
-//   div > .box-flex {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-//   }
-
-//   .circ {
-//     width: 33.33%;
-//     text-align: center;
-//   }
-// }
 
 section.ipo {
   .container {
@@ -167,7 +148,6 @@ section.ipo {
           max-width: 200px;
 
           a {
-            // display: inline-block;
             display: flex;
             justify-content: space-between;
             align-content: center;
@@ -253,7 +233,7 @@ section.ipo {
               tr {
                 display: flex;
                 flex-direction: column;
-                th{
+                th {
                   &:nth-child(even) {
                     background-color: rgba(136, 180, 255, 0.365);
                   }
@@ -505,20 +485,14 @@ section.s-parceiros {
     margin-top: 2rem;
   }
   .container {
-    // background-color: blue;
-    // max-width: 1000px;
-    // height: 200px;
-    // align-items: flex-start;
-    // overflow: hidden;
+
     .centro {
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 0 auto;
       width: 100%;
-      // display: flex;
       overflow: hidden;
-      // flex-wrap: wrap;
       .parce-slader {
         padding: 0;
         opacity: 0.4;
@@ -652,14 +626,13 @@ section.news-lether {
       color: $corWhite;
     }
     .form {
-      width: 700px;
+      width: 600px;
       .form-control {
         margin: 2rem 0;
-        input {
-          width: 100%;
-          height: 50px;
-          padding-left: 1rem;
-        }
+      }
+
+      button{
+        border: 1px solid #f1f1f1;
       }
     }
   }

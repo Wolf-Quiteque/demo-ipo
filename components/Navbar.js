@@ -26,7 +26,7 @@ export default function Navbar() {
           <nav className="navbar flex">
             <div className="logo">
               <Link href="/">
-                <Image src="/image/logo-one.png" alt="" layout="fill" />
+                <img src="/image/logo-one.png" alt="" />
               </Link>
             </div>
             <ul className="menu flex">
@@ -52,13 +52,11 @@ export default function Navbar() {
               </li> */}
             </ul>
           </nav>
-          <div>
-            <button className="btn btn-primary reset">
-              <Link href="/acesso">
-                <a>entrar</a>
-              </Link>
-            </button>
-          </div>
+
+          
+            <Link href="/acesso"><button className="btn-central">entrar</button></Link>
+            
+          
         </div>
       </header>
     </>

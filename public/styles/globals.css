@@ -13,6 +13,41 @@ button {
   padding: 0 1.5rem;
 }
 
+.actived {
+  display: block !important;
+}
+.actived::after {
+  display: table;
+  content: "";
+  width: 200px;
+  height: 5px;
+  background-color: #1363df;
+}
+
+.active a {
+  color: #1363df;
+}
+
+.input-text-1 {
+  width: 100%;
+  font-family: "Montserrat";
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  color: #787878;
+  max-width: 450px;
+  border: 1px solid #ccc;
+  border: 1px solid #383bff;
+}
+
+.input-text {
+  font-family: "Montserrat";
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: #787878;
+  border: 1px solid rgb(210, 210, 210);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -46,8 +81,12 @@ body {
   color: #ffffff;
 }
 
-.active a {
-  color: #3ab0ff;
+a {
+  color: #fff;
+}
+
+button {
+  padding: 0;
 }
 
 .flex {
@@ -66,8 +105,9 @@ body {
 }
 
 .min-container {
+  width: 100%;
   margin: 0 auto;
-  padding: 0 2%;
+  padding: 0 1.5rem;
   max-width: 600px;
 }
 
@@ -76,24 +116,6 @@ body {
   padding: 0 2%;
   width: 100%;
   max-width: 800px;
-}
-
-.actived {
-  display: block !important;
-}
-.actived::after {
-  display: table;
-  content: "";
-  width: 200px;
-  height: 5px;
-  background-color: #3ab0ff;
-}
-
-a {
-  text-decoration: none;
-  color: #ccc;
-  line-height: 1.5;
-  transition: all ease-in 0.2s;
 }
 
 h1,
@@ -135,13 +157,6 @@ img {
   object-fit: cover;
 }
 
-input {
-  font-family: "Montserrat";
-  outline: none;
-  border: 0;
-  transition: all ease-in-out 0.2s;
-}
-
 .top {
   margin: 5rem 0;
 }
@@ -173,17 +188,19 @@ header.header .container {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  height: 100%;
 }
 header.header .container nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  height: 100%;
 }
 header.header .container nav .logo {
   display: block;
   position: relative;
-  height: 100%;
+  height: 50%;
   width: 100px;
 }
 header.header .container nav ul:not(:first-child) {
@@ -201,9 +218,13 @@ header.header .container nav ul li:hover {
 }
 header.header .container nav ul li a {
   display: inline-block;
-  padding: 0.6rem 1.5rem;
   color: #333;
   font-family: "Lilita One", sans-serif;
+}
+header.header .container button {
+  position: relative;
+  color: #ffffff;
+  z-index: 1000;
 }
 
 .btn {
@@ -225,11 +246,11 @@ button.reset a {
 
 .btn-primary {
   color: #fff;
-  background-color: #3ab0ff;
+  background-color: #1363df;
   cursor: pointer;
 }
 .btn-primary:hover {
-  background-color: #1363df;
+  background-color: #3ab0ff;
   transform: translateY(-2px);
 }
 
@@ -242,7 +263,7 @@ button.reset a {
 }
 
 .btn-danger {
-  color: #1363df;
+  color: #3ab0ff;
   background-color: #f1f1f1;
 }
 .btn-danger:hover {
@@ -266,30 +287,31 @@ button.reset a {
 .btn-busca {
   height: 40px;
   width: 125px;
-  background-color: #383bff;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
 }
 .btn-busca:hover {
   background-color: rgba(0, 0, 54, 0.9411764706);
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .btn-submit {
-  background-color: #3ab0ff;
+  background-color: #1363df;
   color: #ffffff;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   padding: 10px 20px;
-  border: 1px solid #3ab0ff;
+  border: 1px solid #1363df;
   cursor: pointer;
 }
 .btn-submit:hover {
   background-color: #15133c;
-  color: #1363df;
+  color: #3ab0ff;
 }
 
 .btn-main {
@@ -299,44 +321,49 @@ button.reset a {
   font-weight: 400;
 }
 .btn-main:hover {
-  background: #1363df;
+  background: #3ab0ff;
 }
 .btn-main:last-child {
   background: none;
   color: darkblue;
 }
 .btn-main:last-child:hover {
-  background-color: #1363df;
+  background-color: #3ab0ff;
   color: #ffffff;
 }
 
 .btn-input {
   padding: 0 10px;
-  background-color: #1363df;
+  background-color: #3ab0ff;
   color: #ffffff;
 }
 .btn-input:hover {
+  background-color: #1363df;
+}
+
+.btn-central,
+.btn-segundo {
+  padding: 1rem 6rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  border-radius: 1.2rem;
+  color: rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-central {
   background-color: #3ab0ff;
 }
-
-.input-text {
-  width: 100%;
-  height: 4.5rem;
-  padding: 1.5rem;
-  font-size: 2rem;
-  color: #787878;
-  max-width: 45rem;
-  border: 1px solid #ccc;
+.btn-central:hover {
+  background: #1363df;
 }
 
-.input-text-1 {
-  width: 100%;
-  padding: 1rem 1rem;
-  font-size: 2rem;
-  color: #787878;
-  max-width: 450px;
-  border: 1px solid #ccc;
-  border: 1px solid #383bff;
+.btn-segundo {
+  color: #242424;
+}
+.btn-segundo:hover {
+  color: #ffffff;
+  background: #1363df;
 }
 
 section.hero {
@@ -356,6 +383,9 @@ section.hero .hero-flex {
   align-content: center;
   height: 100%;
 }
+section.hero .container .button button:not(:first-child) {
+  margin-left: 2rem;
+}
 section.hero h1 {
   top: -60px;
   width: 100%;
@@ -370,7 +400,7 @@ section.hero h1 {
   font-family: "Montserrat", cursive;
 }
 section.hero h1 span {
-  color: #3ab0ff;
+  color: #1363df;
 }
 
 section.barra {
@@ -399,7 +429,7 @@ section.s-dicas h1.title-dicas {
   color: #ffffff;
 }
 section.s-dicas h1.title-dicas span {
-  color: #3ab0ff;
+  color: #1363df;
 }
 section.s-dicas .info-dicas h3.title3 {
   color: #ffffff;
@@ -462,11 +492,11 @@ section.ipo .container .caixa-1 .link li a {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  color: #1363df;
+  color: #3ab0ff;
   padding: 12px;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
-  border-bottom: 1px solid #3ab0ff;
+  border-bottom: 1px solid #1363df;
   border-width: 1px;
 }
 section.ipo .container .caixa-1 .link li a:hover {
@@ -481,7 +511,7 @@ section.ipo .container .caixa-1 .header-fin {
   justify-content: space-between;
 }
 section.ipo .container .caixa-1 .header-fin-tab {
-  border-right: 2px solid #1363df;
+  border-right: 2px solid #3ab0ff;
   padding: 2rem;
   margin-bottom: 2rem;
 }
@@ -564,11 +594,11 @@ section.ipo .container .caixa-2 .form .showResult table tbody tr td:nth-child(ev
 }
 
 section.aplicar {
-  border-bottom: 1px solid #3ab0ff;
+  border-bottom: 1px solid #1363df;
 }
 section.aplicar .container {
   padding: 4rem 0;
-  border-top: 2px solid #3ab0ff;
+  border-top: 2px solid #1363df;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -590,7 +620,7 @@ section.aplicar .container .texto h2.h2 {
   font-family: "Lato", sans-serif;
 }
 section.aplicar .container .texto h2.h2 span {
-  color: #3ab0ff;
+  color: #1363df;
   font-weight: 700;
 }
 section.aplicar .container .texto p.description {
@@ -640,14 +670,14 @@ section.investir .container .button button {
   margin-right: 1rem;
 }
 section.investir .container .button button:first-child {
-  background-color: #3ab0ff;
+  background-color: #1363df;
   color: #ffffff;
 }
 section.investir .container .button button:first-child:hover {
-  background-color: #1363df;
+  background-color: #3ab0ff;
 }
 section.investir .container .button button:last-child:hover {
-  background-color: #1363df;
+  background-color: #3ab0ff;
   color: #ffffff;
 }
 section.investir .container .tab__content {
@@ -683,11 +713,11 @@ section.investir .container .tab__content .financ-details img {
   display: inline-block;
   position: relative;
   border-radius: 1rem;
-  border: 35px solid #3ab0ff;
+  border: 35px solid #1363df;
 }
 
 section.empresas {
-  border-bottom: 1px solid #3ab0ff;
+  border-bottom: 1px solid #1363df;
 }
 section.empresas .container {
   padding: 25px 2rem;
@@ -729,7 +759,7 @@ section.processo .container .text-left p {
   text-align: justify;
 }
 section.processo .container .proce-image {
-  border-bottom: 6px solid #3ab0ff;
+  border-bottom: 6px solid #1363df;
 }
 section.processo .container .proce-image .image {
   object-fit: cover;
@@ -762,7 +792,7 @@ section.s-parceiros .container .centro .parce-slader {
   opacity: 0.4;
   display: inline;
   float: left;
-  border: 8px solid #3ab0ff;
+  border: 8px solid #1363df;
   margin: 6px;
   width: 100%;
   max-width: 250px;
@@ -862,7 +892,7 @@ section.testemunho .min-container .user-details .role {
 }
 
 section.news-lether {
-  background-color: #1363df;
+  background-color: #3ab0ff;
   text-align: center;
 }
 section.news-lether .min-container {
@@ -875,15 +905,13 @@ section.news-lether .min-container h1.title {
   color: #ffffff;
 }
 section.news-lether .min-container .form {
-  width: 700px;
+  width: 600px;
 }
 section.news-lether .min-container .form .form-control {
   margin: 2rem 0;
 }
-section.news-lether .min-container .form .form-control input {
-  width: 100%;
-  height: 50px;
-  padding-left: 1rem;
+section.news-lether .min-container .form button {
+  border: 1px solid #f1f1f1;
 }
 
 section.empresa {
@@ -1027,7 +1055,7 @@ section.s-lista-empresa .compania .company .details-company:hover {
   background-color: #383bff;
 }
 section.s-lista-empresa .br {
-  background-color: #3ab0ff;
+  background-color: #1363df;
   padding: 12px;
   color: #ffffff;
   font-weight: 600;
@@ -1338,7 +1366,7 @@ section.tirarFundo .container-800 .texto p {
   margin: 8px auto;
 }
 section.tirarFundo .container-800 .texto p span {
-  color: #3ab0ff;
+  color: #1363df;
 }
 section.tirarFundo .container-800 .boxMoney {
   text-align: center;
@@ -1350,7 +1378,7 @@ section.tirarFundo .container-800 .boxMoney h3 {
   color: #ffffff;
   padding: 16px;
   width: 100%;
-  background-color: #3ab0ff;
+  background-color: #1363df;
   max-width: 700px;
 }
 section.tirarFundo .container-800 .boxMoney .form {
@@ -1372,7 +1400,7 @@ section.tirarFundo .container-800 .boxMoney .form .form-control [type=text] {
   padding: 1rem;
   background-color: transparent;
   font-size: 1.6rem;
-  background-color: #3ab0ff;
+  background-color: #1363df;
   font-weight: 600;
   text-align: center;
   color: #ffffff;
@@ -1381,14 +1409,14 @@ section.tirarFundo .container-800 .boxMoney .form .form-control [type=number] {
   padding: 1rem;
   width: 250px;
   height: 50px;
-  border: 1px solid #1363df;
+  border: 1px solid #3ab0ff;
 }
 
 section.tabelaReferencia .container h2 {
   font-size: 3rem;
   font-weight: 300;
-  color: #3ab0ff;
-  border-bottom: 2px solid #3ab0ff;
+  color: #1363df;
+  border-bottom: 2px solid #1363df;
   margin-bottom: 25px;
 }
 section.tabelaReferencia .container .tabela__result {
@@ -1418,7 +1446,7 @@ section.tabelaReferencia .container .tabela__result table {
   overflow: hidden;
 }
 section.tabelaReferencia .container .tabela__result table thead {
-  background-color: #3ab0ff;
+  background-color: #1363df;
 }
 section.tabelaReferencia .container .tabela__result table thead tr th {
   height: 50px;
@@ -1446,7 +1474,7 @@ section.paginacao .container {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  border-top: 2px solid #3ab0ff;
+  border-top: 2px solid #1363df;
 }
 section.paginacao .container .paginas span {
   display: inline-block;
@@ -1460,7 +1488,7 @@ section.paginacao .container .paginas span {
   color: #242424;
 }
 section.paginacao .container .paginas .active {
-  background-color: #3ab0ff;
+  background-color: #1363df;
   color: #ffffff;
 }
 section.paginacao .container .impressao form {
@@ -1479,8 +1507,8 @@ section.paginacao .container .impressao form .form-control input {
   width: 100%;
   padding: 6px;
   font-size: 1.6rem;
-  border: 1px solid #3ab0ff;
-  color: #3ab0ff;
+  border: 1px solid #1363df;
+  color: #1363df;
 }
 section.paginacao .container .impressao form .form-control h4 {
   padding: 6px;
@@ -1488,11 +1516,11 @@ section.paginacao .container .impressao form .form-control h4 {
   height: 40px;
   color: #ffffff;
   font-size: 1.6rem;
-  background-color: #3ab0ff;
+  background-color: #1363df;
 }
 
 .s-dataEmpresa .container-2 {
-  border-bottom: 2px solid #3ab0ff;
+  border-bottom: 2px solid #1363df;
   display: grid;
   grid-template-columns: 250px 250px;
   grid-template-rows: auto;
@@ -1517,7 +1545,7 @@ section.paginacao .container .impressao form .form-control h4 {
   padding: 0.5rem 2rem;
 }
 .s-dataEmpresa .container-2 .investido .card-box h3 {
-  background-color: #3ab0ff;
+  background-color: #1363df;
   color: #ffffff;
 }
 .s-dataEmpresa .container-2 .investido .card-box span {
@@ -1621,7 +1649,7 @@ section.paginacao .container .impressao form .form-control h4 {
 .s-information-market .container-2 .header-menu h2 {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  color: #1363df;
+  color: #3ab0ff;
   padding: 0;
   margin-bottom: 1rem;
   transition: all ease-in 0.2s;
@@ -1629,7 +1657,7 @@ section.paginacao .container .impressao form .form-control h4 {
   cursor: pointer;
 }
 .s-information-market .container-2 .header-menu h2:hover {
-  border-bottom: 2px solid #3ab0ff;
+  border-bottom: 2px solid #1363df;
 }
 .s-information-market .box__actaualizada .tabela {
   display: none;
@@ -1668,7 +1696,7 @@ section.paginacao .container .impressao form .form-control h4 {
 }
 
 .header-financiamento {
-  background-color: #3ab0ff;
+  background-color: #1363df;
 }
 .header-financiamento .container {
   display: flex;
@@ -1713,11 +1741,11 @@ section.financiamento .container .texto {
   width: 100%;
   max-width: 500px;
   margin: 36px 0;
-  color: #3ab0ff;
+  color: #1363df;
 }
 section.financiamento .container .texto h1,
 section.financiamento .container .texto p {
-  color: #3ab0ff;
+  color: #1363df;
 }
 section.financiamento .container .texto .title {
   font-size: 4rem;
@@ -1752,7 +1780,7 @@ section.financiamento .container .contactArea .form .form-control [type=text] {
   padding: 10px;
   font-size: 1.4rem;
   font-family: "Lato", sans-serif;
-  color: #3ab0ff;
+  color: #1363df;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -1774,13 +1802,13 @@ section.financiamento .container .contactArea .form .form-textarea textarea {
   color: #242424;
 }
 section.financiamento .container .contactArea .form .form-textarea textarea:is(:focus, :focus-visible) {
-  border: 2px solid #1363df;
+  border: 2px solid #3ab0ff;
 }
 section.financiamento .container .contactArea .form .form-textarea textarea::-webkit-scrollbar {
   width: 0px;
 }
 section.financiamento .container .contactArea .form .form-textarea .shortInfo {
-  background-color: #3ab0ff;
+  background-color: #1363df;
   padding: 10px 2px 10px 30px;
   align-items: center;
   display: flex;
@@ -1801,7 +1829,7 @@ section.financiamento .container .contactArea .form .form-textarea .shortInfo .m
 }
 section.financiamento .container .contactArea .form .form-textarea .shortInfo .mount [type=number] {
   font-size: 1.6rem;
-  color: #3ab0ff;
+  color: #1363df;
   padding: 10px;
 }
 section.financiamento .container .contactArea .form .form-submit {
@@ -1815,14 +1843,14 @@ section.financiamento .container .contactArea .form .form-submit .send {
   font-size: 2rem;
 }
 section.financiamento .container .contactArea .form .form-submit [type=submit] {
-  background-color: #1363df;
+  background-color: #3ab0ff;
   font-family: "Lato", sans-serif;
   color: #ffffff;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   padding: 10px 20px;
-  border: 1px solid #3ab0ff;
+  border: 1px solid #1363df;
   cursor: pointer;
 }
 
@@ -1837,7 +1865,7 @@ section.navBar {
   justify-content: space-between;
   align-items: center;
   column-gap: 2rem;
-  border-bottom: 2px solid #1363df;
+  border-bottom: 2px solid #3ab0ff;
   padding: 0 20rem;
   height: 70px;
 }
@@ -1866,7 +1894,7 @@ section.navBar .avatar .name-types span {
 }
 section.navBar .avatar .name-types .name-type {
   margin-right: 25px;
-  color: #3ab0ff;
+  color: #1363df;
   font-size: 1.8rem;
   font-weight: normal;
   font-family: "Lilita One", sans-serif;
@@ -2035,7 +2063,7 @@ section.customers .containeer {
 }
 section.customers .containeer .customer {
   border-radius: 8px 8px 0px 0px;
-  border: 1px solid #3ab0ff;
+  border: 1px solid #1363df;
   width: 100%;
   max-width: 25rem;
   padding: 0.5rem 2rem;
@@ -2110,8 +2138,24 @@ section.s-login-acesso .container {
 section.s-login-acesso .container .texto {
   text-align: center;
   align-self: center;
-  max-width: 300px;
-  margin: 8rem 0 5rem 0;
+  max-width: 600px;
+  margin: 4rem 0 5rem 0;
+}
+section.s-login-acesso .container .texto h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+section.s-login-acesso .container .btn-account-logar {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 0 0rem 0;
+}
+section.s-login-acesso .container .btn-account-logar button:not(:first-child) {
+  margin-left: 1rem;
+  background-color: transparent;
 }
 section.s-login-acesso .container .login-acess {
   margin-bottom: 10rem;
@@ -2135,7 +2179,7 @@ section.s-login-acesso .container .login-acess .form .form-checkbox {
   align-items: center;
 }
 section.s-login-acesso .container .login-acess .form .form-checkbox span {
-  color: #3ab0ff;
+  color: #1363df;
   cursor: pointer;
 }
 section.s-login-acesso .container .login-acess .form .form-checkbox span:hover {
@@ -2151,7 +2195,8 @@ section.s-login-acesso .container .login-acess .form .form-checkbox .box label {
 section.s-login-acesso .container .login-acess .form input[type=submit] {
   width: 100%;
   height: 45px;
-  background: radial-gradient(circle, rgb(58, 176, 255) 0%, rgba(19, 99, 223, 0.868785014) 100%);
+  transition: all 0.2s ease-in-out;
+  background-color: #383bff;
   cursor: pointer;
   font-size: 1.8rem;
   color: #ffffff;
@@ -2160,7 +2205,201 @@ section.s-login-acesso .container .login-acess .form input[type=submit] {
   font-family: "Inter", sans-serif;
 }
 section.s-login-acesso .container .login-acess .form input[type=submit]:hover {
-  background: #1363df;
+  background: radial-gradient(circle, rgb(58, 176, 255) 0%, rgba(19, 99, 223, 0.868785014) 100%);
+}
+section.s-login-acesso .container .login-acess .form .create-account a {
+  color: #1363df;
+}
+section.s-login-acesso .container .login-acess .form .create-account a:hover {
+  color: #eb4747;
+  text-decoration: underline;
+}
+
+section.s-register-acesso {
+  min-height: 100vh;
+  margin-top: 7rem;
+  background: radial-gradient(circle, rgb(58, 176, 255) 0%, rgba(19, 99, 223, 0.868785014) 100%);
+}
+section.s-register-acesso .container {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.s-register-acesso .container .texto {
+  text-align: center;
+  align-self: center;
+  max-width: 600px;
+  margin: 4rem 0 5rem 0;
+}
+section.s-register-acesso .container .texto h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+section.s-register-acesso .container .btn-account-register {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 0 0rem 0;
+}
+section.s-register-acesso .container .btn-account-register button:not(:first-child) {
+  margin-left: 1rem;
+  background-color: transparent;
+}
+section.s-register-acesso .container .register-acesso {
+  margin-bottom: 10rem;
+  padding: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  max-width: 400px;
+  width: 100%;
+  align-self: center;
+  background: rgb(255, 255, 255);
+}
+section.s-register-acesso .container .register-acesso .form .form-control {
+  display: flex;
+  background: #000;
+}
+section.s-register-acesso .container .register-acesso .form .form-control:not(:first-child) {
+  margin: 1rem 0;
+}
+section.s-register-acesso .container .register-acesso .form .form-control .selected {
+  background-color: #000;
+  transition: all 0.2s ease-in-out;
+}
+section.s-register-acesso .container .register-acesso .form .form-checkbox {
+  margin-bottom: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.s-register-acesso .container .register-acesso .form .form-checkbox span {
+  color: #1363df;
+  cursor: pointer;
+}
+section.s-register-acesso .container .register-acesso .form .form-checkbox span:hover {
+  color: #eb4747;
+  text-decoration: underline;
+}
+section.s-register-acesso .container .register-acesso .form .form-checkbox .box {
+  display: flex;
+}
+section.s-register-acesso .container .register-acesso .form .form-checkbox .box label {
+  margin-left: 3rem;
+}
+section.s-register-acesso .container .register-acesso .form input[type=submit] {
+  width: 100%;
+  height: 45px;
+  transition: all 0.2s ease-in-out;
+  background-color: #383bff;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+section.s-register-acesso .container .register-acesso .form input[type=submit]:hover {
+  background: radial-gradient(circle, rgb(58, 176, 255) 0%, rgba(19, 99, 223, 0.868785014) 100%);
+}
+section.s-register-acesso .container .register-acesso .form .create-account a {
+  color: #1363df;
+}
+section.s-register-acesso .container .register-acesso .form .create-account a:hover {
+  color: #eb4747;
+  text-decoration: underline;
+}
+
+section.s-register-acesso {
+  min-height: 100vh;
+  margin-top: 7rem;
+  background: radial-gradient(circle, rgb(58, 176, 255) 0%, rgba(19, 99, 223, 0.868785014) 100%);
+}
+section.s-register-acesso .container {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.s-register-acesso .container .texto {
+  text-align: center;
+  align-self: center;
+  max-width: 600px;
+  margin: 4rem 0 5rem 0;
+}
+section.s-register-acesso .container .texto h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+section.s-register-acesso .container .btn-account-register {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 0 0rem 0;
+}
+section.s-register-acesso .container .btn-account-register button:not(:first-child) {
+  margin-left: 1rem;
+  background-color: transparent;
+}
+section.s-register-acesso .container .register-acesso {
+  margin-bottom: 10rem;
+  padding: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  max-width: 400px;
+  width: 100%;
+  align-self: center;
+  background: rgb(255, 255, 255);
+}
+section.s-register-acesso .container .register-acesso .form .form-control {
+  display: flex;
+  background: #000;
+}
+section.s-register-acesso .container .register-acesso .form .form-checkbox {
+  margin-bottom: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.s-register-acesso .container .register-acesso .form .form-checkbox span {
+  color: #1363df;
+  cursor: pointer;
+}
+section.s-register-acesso .container .register-acesso .form .form-checkbox span:hover {
+  color: #eb4747;
+  text-decoration: underline;
+}
+section.s-register-acesso .container .register-acesso .form .form-checkbox .box {
+  display: flex;
+}
+section.s-register-acesso .container .register-acesso .form .form-checkbox .box label {
+  margin-left: 3rem;
+}
+section.s-register-acesso .container .register-acesso .form input[type=submit] {
+  width: 100%;
+  height: 45px;
+  transition: all 0.2s ease-in-out;
+  background-color: #383bff;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+section.s-register-acesso .container .register-acesso .form input[type=submit]:hover {
+  background: radial-gradient(circle, rgb(58, 176, 255) 0%, rgba(19, 99, 223, 0.868785014) 100%);
+}
+section.s-register-acesso .container .register-acesso .form .create-account a {
+  color: #1363df;
+}
+section.s-register-acesso .container .register-acesso .form .create-account a:hover {
+  color: #eb4747;
+  text-decoration: underline;
 }
 
 .red {

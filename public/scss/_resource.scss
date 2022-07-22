@@ -1,0 +1,36 @@
+.actived {
+  display: block !important;
+  &::after {
+    display: table;
+    content: "";
+    width: 200px;
+    height: 5px;
+    background-color: $corPrimaria;
+  }
+}
+
+.active a {
+  color: $corPrimaria;
+}
+
+.input-text-1 {
+  width: 100%;
+  font-family: "Montserrat";
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  color: #787878;
+  max-width: 450px;
+  border: 1px solid #ccc;
+  border: 1px solid #383bff;
+}
+
+.input-text {
+  font-family: "Montserrat";
+  width: 100%;
+  // height: 4.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: #787878;
+  // margin: 0 5rem;
+  border: 1px solid rgb(210, 210, 210);
+}

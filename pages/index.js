@@ -44,8 +44,8 @@ export default function Home() {
           </h1>
 
           <div className="button">
-            <button className="btn btn-primary">entrar</button>
-            <button className="btn btn-secondary">investir</button>
+            <button className="btn-central">entrar</button>
+            <button className="btn-segundo">investir</button>
           </div>
         </div>
       </section>
@@ -165,13 +165,12 @@ export default function Home() {
               <h2>simulador de ganhos</h2>
               <span> Taxa a ser aplicada e 2% por mes!</span>
               <form action="">
-              
                 <input
-                className="input-text"
+                  className="input-text"
                   value={setAno}
-                  onChange={(e) => stateAno((e.target.value))}
+                  onChange={(e) => stateAno(e.target.value)}
                 />
-              
+
                 <button className="btn-input">simular</button>
               </form>
 
@@ -422,10 +421,11 @@ export default function Home() {
               <input
                 type="text"
                 name="news"
+                className="input-text"
                 placeholder="Digite seu email e receba actualizacoes..."
               />
             </div>
-            <button type="button" className="btn btn-primary secondary">
+            <button type="button" className="btn-central secodary">
               receber
             </button>
           </form>

@@ -1,0 +1,114 @@
+section.s-register-acesso {
+  min-height: 100vh;
+  margin-top: 7rem;
+
+  @include gradiente;
+  .container {
+    min-height: 30vh;
+
+    @include flex(column, center, center);
+    // background-color: rgb(255, 143, 199);
+    .texto {
+      text-align: center;
+      align-self: center;
+      max-width: 600px;
+      margin: 4rem 0 5rem 0;
+
+      h1 {
+        color: #fff;
+        font-size: 3rem;
+      }
+    }
+
+    .btn-account-register {
+      max-width: 400px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0 0 0rem 0;
+
+      button {
+        &:not(:first-child) {
+          margin-left: 1rem;
+          background-color: transparent;
+        }
+      }
+    }
+    .register-acesso {
+      margin-bottom: 10rem;
+      padding: 3rem;
+      // box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+      // box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      // box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.9) -3px -3px 6px 1px inset;
+      // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+      max-width: 400px;
+      width: 100%;
+      align-self: center;
+      background: rgb(255, 255, 255);
+
+      .form {
+        .form-control {
+          &:not(:first-child) {
+            // margin: 3.2rem 0;
+          }
+          display: flex;
+          background: #000;
+        }
+
+        .form-checkbox {
+          margin-bottom: 3.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          span {
+            color: $corPrimaria;
+            cursor: pointer;
+            &:hover {
+              color: $corRoza;
+              text-decoration: underline;
+            }
+          }
+          .box {
+            display: flex;
+            label {
+              margin-left: 3rem;
+            }
+          }
+        }
+
+        input[type="submit"] {
+          width: 100%;
+          height: 45px;
+          transition: all 0.2s ease-in-out;
+          // @include gradiente;
+          background-color: $corCentral;
+          cursor: pointer;
+          font-size: 1.8rem;
+          color: $corWhite;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-family: "Inter", sans-serif;
+          &:hover {
+            @include gradiente;
+
+            // background: $corSecondary;
+          }
+        }
+
+        .create-account {
+          a {
+            color: $corPrimaria;
+            &:hover {
+              color: $corRoza;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
