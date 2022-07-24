@@ -57,7 +57,7 @@ export default function Register() {
         </div>
       </section> */}
 
-      <section className="s-register-acesso ">
+      {/* <section className="s-register-acesso ">
         <div className="container ">
           <div className="texto">
             <h1>Obrigado por nos escolher</h1>
@@ -128,7 +128,7 @@ export default function Register() {
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

@@ -1,10 +1,17 @@
 import Link from "next/link";
+
+import Script from "next/script";
 export default function Login() {
   return (
     <>
       {/* <div className="container"> */}
-      <section id="s-login-acesso js-login-acesso" className="s-login-acesso ">
-        <div className="container ">
+
+      <Script src="/scripts/login.js" strategy="beforeInteractive"></Script>
+      <section
+        id="s-login-acesso js-login-acesso"
+        className="ative s-login-acesso "
+      >
+        <div className="container  ">
           <div className="texto">
             <h1>Bem Vindo de Volta</h1>
             <p>
@@ -16,7 +23,9 @@ export default function Login() {
           <div className="btn-account-logar">
             <button className=" js-btn-account btn-busca">logar</button>
 
-            <button className=" js-btn-account btn-busca">criar conta</button>
+            <button className=" js-btn-account-signUp btn-busca">
+              criar conta
+            </button>
 
             {/* <Link href="#s-register-acesso">
               <button className=" js-btn-account btn-busca">logar</button>
@@ -83,7 +92,7 @@ export default function Login() {
           <div className="btn-account-register">
             <button className=" js-btn-account btn-busca">criar conta</button>
 
-            <button className=" js-btn-account btn-busca">logar</button>
+            <button className=" js-btn-account-signIn btn-busca">logar</button>
 
             {/* <Link href="#">
               <button className=" js-btn-account btn-busca">criar conta</button>
@@ -122,8 +131,8 @@ export default function Login() {
               <div className="form-control ">
                 <select className="input-text selected" name="" id="">
                   <option selected>selecione o tipo de conta</option>
-                  <option>empresa</option>
-                  <option>usuario</option>
+                  <option>conta-empresa</option>
+                  <option>conta-usuario</option>
                 </select>
               </div>
               <div className="form-control">
@@ -149,9 +158,8 @@ export default function Login() {
                   placeholder="Digite sua senha"
                   required
                 />
-                <label className="label-register" htmlFor="rem">
-                  Ao marcar esta opção concorda com os termos e as politicas de
-                  utilização, de acordo as normas da EMAINVEST.{" "}
+                <label className="label-register" id="rem">
+                I accepted all terms and conditions of EMAINVEST.{" "}
                 </label>
               </div>
 
