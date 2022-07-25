@@ -2126,7 +2126,8 @@ section.side-post {
 section.s-login-acesso {
   min-height: 100vh;
   margin-top: 7rem;
-  background: radial-gradient(circle, rgb(58, 176, 255) 0%, rgba(19, 99, 223, 0.868785014) 100%);
+  background: url("/image/login-01.svg");
+  background-size: cover;
 }
 section.s-login-acesso .container {
   min-height: 30vh;

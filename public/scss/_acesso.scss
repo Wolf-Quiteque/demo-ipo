@@ -2,7 +2,9 @@ section.s-login-acesso {
   min-height: 100vh;
   margin-top: 7rem;
 
-  @include gradiente;
+  // @include gradiente;
+  background: url("/image/login-01.svg");
+  background-size: cover;
   .container {
     min-height: 30vh;
 
@@ -204,15 +206,12 @@ section.s-register-acesso {
           display: flex;
           justify-content: flex-start;
           align-items: center;
-         
-          
-          
-            label {
-              margin-left: 1rem;
-              font-size: 1.2rem;
-              align-self: center;
-            }
-          
+
+          label {
+            margin-left: 1rem;
+            font-size: 1.2rem;
+            align-self: center;
+          }
         }
 
         input[type="submit"] {
