@@ -108,7 +108,7 @@ export default function Login() {
                 <input
                   className="input-text"
                   type="text"
-                  placeholder="documento..BI/Passaport"
+                  placeholder="documento..NIF/Passaport"
                   required
                 />
               </div>
@@ -128,13 +128,13 @@ export default function Login() {
                   required
                 />
               </div>
-              <div className="form-control ">
+              {/* <div className="form-control ">
                 <select className="input-text selected" name="" id="">
                   <option selected>selecione o tipo de conta</option>
                   <option>conta-empresa</option>
                   <option>conta-usuario</option>
                 </select>
-              </div>
+              </div> */}
               <div className="form-control">
                 <input
                   className="input-text"
@@ -159,7 +159,7 @@ export default function Login() {
                   required
                 />
                 <label className="label-register" id="rem">
-                I accepted all terms and conditions of EMAINVEST.{" "}
+                  I accepted all terms and conditions of EMAINVEST.{" "}
                 </label>
               </div>
 
